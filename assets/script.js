@@ -231,7 +231,7 @@ $(document).ready(function() {
 });
 
 
-
+/*
 // Ajout du clic sur l'élément <h1> pour défiler vers une section spécifique
 const sqlThequeHeader = document.getElementById("a-sqltheque");
 sqlThequeHeader.addEventListener("click", (event) => {
@@ -239,6 +239,7 @@ sqlThequeHeader.addEventListener("click", (event) => {
     const targetIndex = 1; // Index de la section vers laquelle scroller (section 2 ici)
     scrollToSection(targetIndex); // Appelle ta fonction existante avec l'index
 });
+*/
 
 $(document).ready(function () {
     // Lorsque l'utilisateur clique sur un <h2>

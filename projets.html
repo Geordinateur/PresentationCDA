@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +8,25 @@
     <script src="assets/jquery-3.7.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <nav>
         <ul>
-            <a href="index.html">
-                <li>Introduction</li>
-            </a><a href="competences.html">
-                <li>Les compétences</li>
-            </a><a href="projets.html">
-                <li class="enabled">Les projets</li>
-            </a><a href="realisations.html">
-                <li>Les réalisations</li>
-            </a><a href="conclusion.html">
-                <li>Conslusion</li>
-            </a>
+            <a href="index.html"><li>Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li class="enabled">Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conslusion</li></a>
         </ul>
     </nav>
-    <div class="section" id="section1">
+    <div class="section" id="section17">
         <h1>Les projets</h1>
-        <p>3 projet ont été choisi afin de couvrir le maximum de compétences demandées.</p>
+        <p>3 projets ont été choisi afin de couvrir le maximum de compétences demandées.</p>
         <div class="flex-row">
+            <a href="#" id="a-pleiade">
+                <div class="card btn disabled">
+                    <h1>Pléiade</h1>
+                </div>
+            </a>
             <a href="#" id="a-sqltheque">
-                <div class="card btn">
+                <div class="card btn disabled">
                     <h1>SQLTheque</h1>
                 </div>
             </a>
@@ -45,107 +35,79 @@
                     <h1>DataWiper</h1>
                 </div>
             </a>
-            <a href="#" id="a-pleiade">
-                <div class="card btn">
-                    <h1>Pléiade</h1>
-                </div>
-            </a>
         </div>
     </div>
-    <div class="section" id="section2">
+    <div class="section" id="section18">
+        <h1>Pléiade</h1>
+        <h2 id="3-1">Présentation de l'outil</h2>
+        <p id="3-1-1">
+            ◽ C'est la solution propriétaire du groupe MH pour la gestion des contrats.
+            <br>◽ <strong>1500 utilisateurs simultané</strong> qui interagissent avec l'application pour la gestion des contrats.
+            <br>◽ <strong>35 serveurs de production</strong> virtualisés.
+            <br>◽ <strong>Plus de 5 millions de lignes de code</strong> maintenues et évolutives.
+        </p>
+        <h2 id="3-2">Gestion de projet</h2>
+        <p id="3-2-1">
+            <a href="#" onclick="afficherPopupImg('images/diagramme-gantt-pleiade.png')">Pléiade</a> est maintenu et évolue via une série de projets structurés qui suivent un <a href="#" onclick="afficherPopupImg('images/cycle-en-v.png')">cycle en V</a>: 
+            <br>◽ <strong>Définition du périmètre</strong>: Identification des besoins et des fonctionnalités à développer ou à 
+            améliorer.
+            <br>◽ <strong>Conception</strong>: Modélisation et architecture des solutions techniques.
+            <br>◽ <strong>Spécifications</strong>: Rédaction des spécifications fonctionnelles et techniques.
+            <br>◽ <strong>Développement</strong>: Phase de codage des nouvelles fonctionnalités et corrections.
+            <br>◽ <strong>Tests de Validation Interne (TVI)</strong>: Tests initiaux réalisés en interne pour vérifier la conformité 
+            aux spécifications.
+            <br>◽ <strong>Recette (Tests de Recette Fonctionnelle - TRF)</strong>: Phase de tests utilisateurs, où la version est 
+            validée en conditions réelles avant le déploiement.
+            <br>◽ <strong>Tests de préproduction</strong>: Dernière phase de validation avant la mise en production.
+            </p>
+        <h2 id="3-3">Test de Non Régression Automatisé</h2>
+        <p id="3-3-1">
+            L'automatisation des tests de non-régression assure la stabilité des fonctionnalités existantes en identifiant rapidement les régressions introduites par les nouvelles modifications.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/x-page.png')">X_page</a>: Encapsule les déclarations utiles pour l'éxécution du test.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/x-test.png')">X_test</a>: Contient les instructions du scénario de test.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/azuredevops-tests.png')">Consultation des résultats</a>: L'outil AzureDevOps vas référencier tous les tests enregistrer et les executers.
+        </p>
+    </div>
+    <div class="section" id="section19">
         <h1>SQLTheque</h1>
-        <h2 id="1-1">Le contexte</h2>
+        <h2 id="1-1">Contexte du projet</h2>
         <p id="1-1-1">
-            ❔ <strong>Origine du besoin</strong> : Les métiers sollicitent régulièrement la MOA pour des extractions de
-            données spécifiques.
-            <br>❌ <strong>Problématique</strong> : La MOA dépend de la MOE pour exécuter et concevoir des requêtes SQL,
-            ce qui entraîne des délais et une charge de travail supplémentaire pour l'équipe technique.
+            <!--❔ <strong>Origine du besoin</strong> : Les métiers sollicitent régulièrement la MOA pour des extractions de
+            données spécifiques.-->
+            ❌ <strong>Problématique</strong>: La MOA dépend de la MOE pour exécuter et concevoir des requêtes SQL afin d'obtenir des informations essentielles pour mener à bien ses missions.
+            <br>✔ <strong>Une solution</strong>: Le SQLTheque permettra de rompre cette dépendance en offrant une bibliothèque de scripts exécutables sur plusieurs environnements, avec des paramètres modulables.
         </p>
-        <h2 id="1-2">Analyse du besoin</h2>
+        <h2 id="1-2">Gestion de projet</h2>
         <p id="1-2-1">
-            ◽ Développer une application contrôlée et sécurisée permettant à la MOA d'accéder à des scripts SQL prêts à
-            l'emploi, sans dépendre de la MOE.
-            <br>◽ Une application web simple et intuitive, structurée grâce à une maquette validée. <a href="#"
-                onclick="afficherPopupImg('images/maquette-sqltheque.png')">La maquette a permis de définir les menus,
-                champs et fonctionnalités clés</a>.
+            ◽ Le SQLTheque sera une application réservée à MH TECH, et, par conséquent, n'aura pas les mêmes privilèges que le DataWiper. La gestion de projet, dans ce contexte, ne sera donc pas nécessaire.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/maquette-sqltheque.png')">Une maquette</a> a été élaborée pour organiser le contenu de manière structurée.
+            <br>❌ La mise en place d'une base de données MS SQL Server sera impossible en raison de la nature spécifique du projet.
+            <br>✔ Pour pallier cette contrainte, <a href="#" onclick="afficherPopupImg('images/sqlite-sqltheque.png')">SQLite</a> a été sélectionnée, ce qui simplifie également le processus de déploiement.
         </p>
-        <h2 id="1-3">Environnement technique</h2>
+        <!--
+        <h2 id="1-3">Analyse du besoin</h2>
         <p id="1-3-1">
-            ◽ <strong>Base de données</strong> : <a href="#"
-                onclick="afficherPopupImg('images/sqlite-sqltheque.png')">SQLite, choisie pour simplifier le déploiement
-                et la gestion.</a>
-            <br>◽ <strong>Architecture</strong> : Partage de composants communs avec le projet DataWiper, pour maximiser
-            la réutilisation et la maintenance.
         </p>
+        -->
     </div>
     <div class="section" id="section3">
         <h1>DataWiper</h1>
-        <h2 id="2-1">Le contexte</h2>
+        <h2 id="2-1">Contexte du projet</h2>
         <p id="2-1-1">
-            ❔ Origine du besoin : Depuis l'entrée en vigueur du RGPD, MH faisant partie intégrante du monde de la santé qui est lui-même extrêment réglementé,
-            ne disposais pas de système automatisé pour gérer ces purges.
-            <br>❌ Problématique : La gestion des données de purge et leur ordonnancement étaient manuels et peu
-            efficaces, avec des risques de non-conformité ou de pertes de données sensibles, aucun système automatisé pour gérer ceci.
+            ❔ Origine du besoin : Depuis l'entrée en vigueur du RGPD, MH, étant un acteur clé du secteur de la santé, évolue dans un environnement fortement réglementé.
+            <br>❌ Problématique : La gestion des données de purge et leur ordonnancement se faisait manuellement, ce qui était peu efficace et présentait des risques de non-conformité ou de perte de données sensibles. Aucun système automatisé n'était en place pour gérer ces processus.
         </p>
-        <h2 id="2-3">La gestion du projet</h2>
+        <h2 id="2-3">Gestion de projet</h2>
         <p id="2-3-1">
-            ◽ Elle fut organisée en "Agilité", avec un point régulier sur l'avancement des fonctionnalité.
-            <br>◽ Notre chef d'équipe, aura le role de MOA, je rejoins Rémi sur le projet.
-            <br>◽ Une logique Client-server (architecture trois tiers).
+            ◽ <a href="#" onclick="afficherPopupImg('images/moa-moe.png')">Rôles</a>: Le chef d'équipe a assumé le rôle de MOA, tandis que j'ai rejoint Rémi en tant que contributeur au projet.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/agilite.png')">Méthodologie</a>:  Organisation en mode agile, avec des points réguliers pour suivre l'avancement des fonctionnalités et ajuster les priorités si nécessaire.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Architecture</a>: Mise en place d'une architecture client-serveur de type trois tiers, garantissant modularité et évolutivité.
+            <br>◽ Technologies : Utilisation de technologies maîtrisées par l'équipe, notamment ASP.Net, SQL Server et JavaScript, pour assurer une mise en œuvre efficace et rapide.
         </p>
-        <h2 id="2-4">Conclusion</h2>
+        <h2 id="2-4">Analyse du besoin</h2>
         <p id="2-4-1">
-            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Aujourd'hui le SQLTheque,
-                c'est environ 200 script SQL de stocker et de partager sur l'intranet.</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-consulter.png')">Une interface simple pour
-                consuler et trier les scripts</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-ajouter-modifier.png')">Un éditeur SQL pour
-                ajouter où modifier les scripts</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Une zone pour gérer les
-                paramètres optionnels.</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Et enfin un écran pour
-                executer avec des paramètres renseigner au choix.</a>
-        </p>
-    </div>
-    <div class="section" id="section4">
-        <h1>Pléiade</h1>
-        <h2 id="3-1">Le contexte</h2>
-        <p id="3-1-1">
-            La MOA à régulièrement besoin d'intéroger les BDDs pour répondre aux demandes du métier.
-            <br>Afin d'être plus autonome sur ce sujet un outils était nécessaire.
-            <br>Le projet restera interne, donc une application restreinte.
-        </p>
-        <h2 id="3-2">Les Spécifications fonctionnelles</h2>
-        <p id="3-2-1">
-            Interface WEB pour faciliter l'accès et les échanges.
-            <br><a href="#" onclick="afficherPopupImg('images/diagramme-cas-utilisation.png')">Sauvegarder, consulter,
-                modifier, paramètrer, executer des requetes SQL.</a>
-            <br>Une maquette as été établie dans un but d'organisation.
-            <!--<a href="maquette-sqltheque.xlsx">voir la maquette</a>.-->
-            <!--<br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')" >Une base de donnée SQLite sera mise en place</a>-->
-        </p>
-        <h2 id="3-3">Les Spécifications techniques</h2>
-        <p id="3-3-1">
-            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Une architecture trois tiers
-                afin de rendre le développement + rapide, + maintenable et + fiable.</a>
-            <br><a href="#" onclick="afficherPopupImg('images/mvc.png')">Avec le modèle de conception MVC (Model View
-                Controller)</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')">Une base de données pour la
-                persistance avec SQLite.</a>
-            <br>Technologies et composants utilisées: TypeScript, Ag-Grid, CodeMirror, JQuery, ASP.Net Core, ADO.Net
-        </p>
-        <h2 id="3-4">Conclusion</h2>
-        <p id="3-4-1">
-            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Aujourd'hui le SQLTheque,
-                c'est environ 200 script SQL de stocker et de partager sur l'intranet.</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-consulter.png')">Une interface simple pour
-                consuler et trier les scripts</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-ajouter-modifier.png')">Un éditeur SQL pour
-                ajouter où modifier les scripts</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Une zone pour gérer les
-                paramètres optionnels.</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Et enfin un écran pour
-                executer avec des paramètres renseigner au choix.</a>
+            ◽ <strong>Solution de purge automatisée</strong>: Développer une application permettant de gérer les processus de purge des données de manière automatisée, tout en respectant les critères de confidentialité et de sécurité.
+            <br>◽ <strong>Interface utilisateur claire et efficace</strong>: Une application robuste permettant à l'utilisateur de configurer, exécuter et suivre les processus de purge des données, tout en étant conforme aux exigences de sécurité et de traçabilité.
         </p>
     </div>
     <!-- Conteneur de la popup pour afficher l'image en grand -->
@@ -162,5 +124,4 @@
     </footer>
     <script src="assets/script.js"></script>
 </body>
-
 </html>

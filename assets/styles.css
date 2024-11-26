@@ -104,12 +104,10 @@ p {
 }
 
 
-        /* Par défaut, cacher tous les <p> */
-        .section p {
+        .section h2 + p {
           display: none;
       }
 
-      /* Un style simple pour l'effet de survol sur les <h2> */
       .section h2 {
           cursor: pointer;
           transition: color 0.2s;
@@ -142,7 +140,9 @@ p {
 
 
 #section-intro {
-	background-color: #006374;
+	/*background-color: #006374;*/
+  background: rgb(0,99,116);
+  background: radial-gradient(circle, rgba(0,99,116,1) 0%, rgba(0,43,58,1) 100%);
 }
 
 #section-intro-3 {
@@ -193,18 +193,38 @@ p {
 #section12 {
 	background-color: #FFB43D;
 }
-
 #section13 {
-  background: linear-gradient(#FFFFFF, #F0B7A5);
+  background: linear-gradient(#F0B7A5, #FFFFFF);
 }
-#section13 {
-  background: linear-gradient(#FFFFFF, #5AD5D9);
+#section14 {
+  background: linear-gradient(#5AD5D9, #FFFFFF);
 }
-#section13 {
-  background: linear-gradient(#FFFFFF, #6D4CA7);
+#section15 {
+  background: linear-gradient(#6D4CA7, #FFFFFF);
 }
-#section13 {
-  background: linear-gradient(#FFFFFF, #E4D8C4);
+#section16 {
+  background: linear-gradient(#E4D8C4, #FFFFFF);
+}
+#section17 {
+  background: linear-gradient(#006374, #002b3a);
+}
+#section18 {
+  background: linear-gradient(#002b3a, #006374);
+}
+#section19 {
+  background: linear-gradient(#006374, #002b3a);
+}
+#section20 {
+  background: linear-gradient(#FF4B33, #E2250C);
+}
+#section21 {
+  background: linear-gradient(#E2250C, #FF4B33);
+}
+#section22 {
+  background: linear-gradient(#6D4CA7, #4B218E);
+}
+#section23 {
+  background: linear-gradient(#4B218E, #6D4CA7);
 }
 
 footer {
@@ -260,7 +280,7 @@ body {
 }
 
 .disabled {
-	opacity: 0.3;
+	opacity: 0.5;
 }
 
 /* Styles pour la div popup */
