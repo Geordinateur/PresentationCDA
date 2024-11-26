@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLTheque</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li>Introduction</li></a><a href="projets.html"><li>Les projets</li></a><a href="sqltheque.html"><li class="enabled">SQLTheque</li></a><a href="datawiper.html"><li>DataWiper</li></a><a href="pleiade.html"><li>Pléiade</li></a><a href="conclusion.html"><li>Conslusion</li></a>
+        </ul>
+    </nav>
+
+    <div class="section" id="section1">
+        <h1>SQLTheque</h1>
+        <h2>Le contexte</h2>
+        <p class="fulltxt">La MOA à régulièrement besoin d'intéroger les BDDs pour répondre aux demandes du métier. 
+            <br>Afin d'être plus autonome sur ce sujet un outils était nécessaire.
+            <br>Le projet restera interne, donc une application restreinte.
+        </p>
+    </div>
+
+    <div class="section" id="section2">
+        <h2>Les Spécifications fonctionnelles</h2>
+        <p class="fulltxt">Interface WEB pour faciliter l'accès et les échanges.
+            <br><a href="#" onclick="afficherPopupImg('images/diagramme-cas-utilisation.png')" >Sauvegarder, consulter, modifier, paramètrer, executer des requetes SQL.</a>
+            <br>Une maquette as été établie dans un but d'organisation. <!--<a href="maquette-sqltheque.xlsx">voir la maquette</a>.-->
+            <!--<br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')" >Une base de donnée SQLite sera mise en place</a>-->
+            <br>
+
+        </p>
+    </div>
+
+
+    <div class="section" id="section3">
+        <h2>Les Spécifications techniques</h2>
+        <p class="fulltxt"><a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')" >Une architecture trois tiers afin de rendre le développement + rapide, + maintenable et + fiable.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/mvc.png')" >Avec le modèle de conception MVC (Model View Controller)</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')" >Une base de données pour la persistance avec SQLite.</a>
+            <br>Technologies et composants utilisées: TypeScript, Ag-Grid, CodeMirror, JQuery, ASP.Net Core, ADO.Net
+            </ul>
+        </p>
+    </div>
+
+
+    <div class="section" id="section4">
+        <h2>Conclusion</h2>
+        <p class="fulltxt"><a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')" >Aujourd'hui le SQLTheque, c'est environ 200 script SQL de stocker et de partager sur l'intranet.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-consulter.png')" >Une interface simple pour consuler et trier les scripts</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-ajouter-modifier.png')" >Un éditeur SQL pour ajouter où modifier les scripts</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')" >Une zone pour gérer les paramètres optionnels.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')" >Et enfin un écran pour executer avec des paramètres renseigner au choix.</a>
+            </ul>
+        </p>
+    </div>
+
+
+    <!--<div class="section" id="section2">
+        <div class="card">
+        <h1>SQLTheque</h1>
+    </div>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="card"><h1>DataWiper</h1>Les besoins/le contexte</div>
+    </div>
+
+    <div class="section" id="section4">
+        <div class="card"><h1>Pléiade</h1>L'environnement/Planning et suivi</div>
+    </div>-->
+<!-- Conteneur de la popup pour afficher l'image en grand -->
+<div id="popup-img" onclick="fermerPopup()" class="popup">
+    <img id="popup-content" src="" alt="Image en grand">
+  </div>
+	<footer>
+		<div class="footer-left">
+			<a href="#" id="previous"></a>
+		</div>
+		<div class="footer-right">
+			<a href="datawiper.html" id="next"></a>
+		</div>
+	</footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>

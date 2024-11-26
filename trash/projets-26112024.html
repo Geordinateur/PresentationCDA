@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Projets</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li>Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li class="enabled">Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conslusion</li></a>
+        </ul>
+    </nav>
+    <div class="section" id="section1">
+        <h1>Les projets</h1>
+        <p>3 projet ont été choisi afin de couvrir le maximum de compétences demandées.</p>
+        <div class="flex-row">
+            <a href="#" id="a-sqltheque">
+                <div class="card btn">
+                    <h1>SQLTheque</h1>
+                </div>
+            </a>
+            <a href="#" id="a-datawiper">
+                <div class="card btn">
+                    <h1>DataWiper</h1>
+                </div>
+            </a>
+            <a href="#" id="a-pleiade">
+                <div class="card btn">
+                    <h1>Pléiade</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <h1>SQLTheque</h1>
+        <h2 id="1-1">Le contexte</h2>
+        <p id="1-1-1">
+            ❔ <strong>Origine du besoin</strong> : Les métiers sollicitent régulièrement la MOA pour des extractions de données spécifiques.
+            <br>❌ <strong>Problématique</strong> : La MOA dépend de la MOE pour exécuter et concevoir des requêtes SQL, ce qui entraîne des délais et une charge de travail supplémentaire pour l'équipe technique.
+        </p>
+        <h2 id="1-2">Analyse du besoin</h2>
+        <p id="1-2-1">
+            ◽ Développer une application contrôlée et sécurisée permettant à la MOA d'accéder à des scripts SQL prêts à l'emploi, sans dépendre de la MOE.
+            <br>◽ Une application web simple et intuitive, structurée grâce à une maquette validée. <a href="#" onclick="afficherPopupImg('images/maquette-sqltheque.png')" >La maquette a permis de définir les menus, champs et fonctionnalités clés</a>.
+        </p>
+        <h2 id="1-3">Environnement technique</h2>
+        <p id="1-3-1">
+            ◽ <strong>Base de données</strong> : <a href="#" onclick="afficherPopupImg('images/sqlite-sqltheque.png')">SQLite, choisie pour simplifier le déploiement et la gestion.</a>
+            <br>◽ <strong>Architecture</strong> : Partage de composants communs avec le projet DataWiper, pour maximiser la réutilisation et la maintenance.
+        </p>
+
+
+        <!--
+        <h2 id="1-2">Les Spécifications fonctionnelles</h2>
+        <p id="1-2-1">
+            Interface WEB pour faciliter l'accès et les échanges.
+            <br><a href="#" onclick="afficherPopupImg('images/diagramme-cas-utilisation.png')">Sauvegarder, consulter,
+                modifier, paramètrer, executer des requetes SQL.</a>
+            <br>Une application simple et épurée, une maquette as été établie à cet effet.
+            <a href="maquette-sqltheque.xlsx">voir la maquette</a>.
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')" >Une base de donnée SQLite sera mise en place</a>
+        </p>
+        <h2 id="1-3">Les Spécifications techniques</h2>
+        <p id="1-3-1">
+            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Une architecture trois tiers
+                afin de rendre le développement + rapide, + maintenable et + fiable.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/mvc.png')">Avec le modèle de conception MVC (Model View
+                Controller)</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')">Une base de données pour la
+                persistance avec SQLite.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')">AzureDevOps afin de gérer 1111111111111111111</a>
+            <br>Technologies et composants utilisées: TypeScript, Ag-Grid, CodeMirror, JQuery, ASP.Net Core, ADO.Net
+        </p>
+        <h2 id="1-4">Conclusion</h2>
+        <p id="1-4-1">
+            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Aujourd'hui le SQLTheque,
+                c'est environ 200 script SQL de stocker et de partager sur l'intranet.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-consulter.png')">Une interface simple pour
+                consuler et trier les scripts</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-ajouter-modifier.png')">Un éditeur SQL pour
+                ajouter où modifier les scripts</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Une zone pour gérer les
+                paramètres optionnels.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Et enfin un écran pour
+                executer avec des paramètres renseigner au choix.</a>
+        </p>-->
+    </div>
+    <div class="section" id="section3">
+
+        <h1>DataWiper</h1>
+        <h2 id="2-1">Le contexte</h2>
+        <p id="2-1-1">
+        - Origine du besoin : L'entreprise souhaite améliorer la gestion des données sensibles et la mise en conformité avec les exigences légales liées à la gestion des informations personnelles.
+        <br> - Problématique : La gestion des données de purge et leur ordonnancement étaient manuels et peu efficaces, avec des risques de non-conformité ou de pertes de données sensibles.
+        <!--<h1>DataWiper</h1>
+        <h2 id="2-1">Le contexte</h2>
+        <p id="2-1-1">
+            La MOA à régulièrement besoin d'intéroger les BDDs pour répondre aux demandes du métier.
+            <br>Afin d'être plus autonome sur ce sujet un outils était nécessaire.
+            <br>Le projet restera interne, donc une application restreinte.
+        </p>
+        <h2 id="2-2">Les Spécifications fonctionnelles</h2>
+        <p id="2-2-1">
+            Interface WEB pour faciliter l'accès et les échanges.
+            <br><a href="#" onclick="afficherPopupImg('images/diagramme-cas-utilisation.png')">Sauvegarder, consulter,
+                modifier, paramètrer, executer des requetes SQL.</a>
+            <br>Une maquette as été établie dans un but d'organisation.-->
+            <!--<a href="maquette-sqltheque.xlsx">voir la maquette</a>.-->
+            <!--<br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')" >Une base de donnée SQLite sera mise en place</a>-->
+        </p>
+        <h2 id="2-3">Les Spécifications techniques</h2>
+        <p id="2-3-1">
+            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Une architecture trois tiers
+                afin de rendre le développement + rapide, + maintenable et + fiable.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/mvc.png')">Avec le modèle de conception MVC (Model View
+                Controller)</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')">Une base de données pour la
+                persistance avec SQLite.</a>
+            <br>Technologies et composants utilisées: TypeScript, Ag-Grid, CodeMirror, JQuery, ASP.Net Core, ADO.Net
+        </p>
+        <h2 id="2-4">Conclusion</h2>
+        <p id="2-4-1">
+            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Aujourd'hui le SQLTheque,
+                c'est environ 200 script SQL de stocker et de partager sur l'intranet.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-consulter.png')">Une interface simple pour
+                consuler et trier les scripts</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-ajouter-modifier.png')">Un éditeur SQL pour
+                ajouter où modifier les scripts</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Une zone pour gérer les
+                paramètres optionnels.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Et enfin un écran pour
+                executer avec des paramètres renseigner au choix.</a>
+        </p>
+    </div>
+    <div class="section" id="section4">
+        <h1>Pléiade</h1>
+        <h2 id="3-1">Le contexte</h2>
+        <p id="3-1-1">
+            La MOA à régulièrement besoin d'intéroger les BDDs pour répondre aux demandes du métier.
+            <br>Afin d'être plus autonome sur ce sujet un outils était nécessaire.
+            <br>Le projet restera interne, donc une application restreinte.
+        </p>
+        <h2 id="3-2">Les Spécifications fonctionnelles</h2>
+        <p id="3-2-1">
+            Interface WEB pour faciliter l'accès et les échanges.
+            <br><a href="#" onclick="afficherPopupImg('images/diagramme-cas-utilisation.png')">Sauvegarder, consulter,
+                modifier, paramètrer, executer des requetes SQL.</a>
+            <br>Une maquette as été établie dans un but d'organisation.
+            <!--<a href="maquette-sqltheque.xlsx">voir la maquette</a>.-->
+            <!--<br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')" >Une base de donnée SQLite sera mise en place</a>-->
+        </p>
+        <h2 id="3-3">Les Spécifications techniques</h2>
+        <p id="3-3-1">
+            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Une architecture trois tiers
+                afin de rendre le développement + rapide, + maintenable et + fiable.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/mvc.png')">Avec le modèle de conception MVC (Model View
+                Controller)</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-bdd.png')">Une base de données pour la
+                persistance avec SQLite.</a>
+            <br>Technologies et composants utilisées: TypeScript, Ag-Grid, CodeMirror, JQuery, ASP.Net Core, ADO.Net
+        </p>
+        <h2 id="3-4">Conclusion</h2>
+        <p id="3-4-1">
+            <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Aujourd'hui le SQLTheque,
+                c'est environ 200 script SQL de stocker et de partager sur l'intranet.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-consulter.png')">Une interface simple pour
+                consuler et trier les scripts</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-ajouter-modifier.png')">Un éditeur SQL pour
+                ajouter où modifier les scripts</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Une zone pour gérer les
+                paramètres optionnels.</a>
+            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Et enfin un écran pour
+                executer avec des paramètres renseigner au choix.</a>
+        </p>
+    </div>
+    <!-- Conteneur de la popup pour afficher l'image en grand -->
+    <div id="popup-img" onclick="fermerPopup()" class="popup">
+        <img id="popup-content" src="" alt="Image en grand">
+    </div>
+    <footer>
+        <div class="footer-left">
+            <a href="#" id="previous"></a>
+        </div>
+        <div class="footer-right">
+            <a href="realisations.html" id="next"></a>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>
