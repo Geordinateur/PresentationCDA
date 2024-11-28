@@ -165,12 +165,6 @@ var wordflick = function (words, speed = 70, skip_delay = 15) {
   });
   */
 
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const previousLink = document.getElementById('previous');
 
@@ -217,9 +211,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-
-
 $(document).ready(function() {
 	for(let i = 0; i <= 12; i++) {
 		$('#' + i).click(function(e) {
@@ -229,7 +220,6 @@ $(document).ready(function() {
 		});
 	}
 });
-
 
 /*
 // Ajout du clic sur l'élément <h1> pour défiler vers une section spécifique

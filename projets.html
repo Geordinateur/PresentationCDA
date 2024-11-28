@@ -62,10 +62,10 @@
             </p>
         <h2 id="3-3">Test de Non Régression Automatisé</h2>
         <p id="3-3-1">
-            L'automatisation des tests de non-régression assure la stabilité des fonctionnalités existantes en identifiant rapidement les régressions introduites par les nouvelles modifications.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/x-page.png')">X_page</a>: Encapsule les déclarations utiles pour l'éxécution du test.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/x-test.png')">X_test</a>: Contient les instructions du scénario de test.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/azuredevops-tests.png')">Consultation des résultats</a>: L'outil AzureDevOps vas référencier tous les tests enregistrer et les executers.
+            L'automatisation des tests de non-régression garantit la stabilité des fonctionnalités existantes en détectant rapidement les éventuelles régressions provoquées par de nouvelles modifications.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/x-page.png')">X_page</a>: Regroupe les déclarations nécessaires à l'exécution des tests, notamment les composants et éléments ciblés.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/x-test.png')">X_test</a>: Contient les étapes et instructions détaillées des scénarios de test à exécuter.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/azuredevops-tests.png')">Analyse des résultats</a>: Les résultats des tests sont centralisés et référencés dans Azure DevOps, où ils peuvent être exécutés, suivis et analysés.
         </p>
     </div>
     <div class="section" id="section19">
@@ -75,7 +75,7 @@
             <!--❔ <strong>Origine du besoin</strong> : Les métiers sollicitent régulièrement la MOA pour des extractions de
             données spécifiques.-->
             ❌ <strong>Problématique</strong>: La MOA dépend de la MOE pour exécuter et concevoir des requêtes SQL afin d'obtenir des informations essentielles pour mener à bien ses missions.
-            <br>✔ <strong>Une solution</strong>: Le SQLTheque permettra de rompre cette dépendance en offrant une bibliothèque de scripts exécutables sur plusieurs environnements, avec des paramètres modulables.
+            <br>✔ <a href="#" onclick="afficherPopupImg('images/diagramme-cas-utilisation-sqltheque.png')">Une solution</a>: Le SQLTheque permettra de rompre cette dépendance en offrant une bibliothèque de scripts exécutables sur plusieurs environnements, avec des paramètres modulables.
         </p>
         <h2 id="1-2">Gestion de projet</h2>
         <p id="1-2-1">
@@ -108,6 +108,17 @@
         <p id="2-4-1">
             ◽ <strong>Solution de purge automatisée</strong>: Développer une application permettant de gérer les processus de purge des données de manière automatisée, tout en respectant les critères de confidentialité et de sécurité.
             <br>◽ <strong>Interface utilisateur claire et efficace</strong>: Une application robuste permettant à l'utilisateur de configurer, exécuter et suivre les processus de purge des données, tout en étant conforme aux exigences de sécurité et de traçabilité.
+        </p>
+        <h2 id="2-5">Comment s'y prend-il?</h2>
+        <p id="2-5-1">
+		Le DataWiper est conçu pour être <strong>générique</strong>, c’est-à-dire qu’il peut purger les données de n’importe quelle base de données appartenant à MH, quelle que soit l’application concernée :
+		<br>◽ <strong>Parcours de la hiérarchie des tables</strong>: Identifie et respecte les relations de dépendance entre les tables.
+		<br>◽ <strong>Filtrage des données à supprimer</strong>: Applique des critères spécifiques pour cibler uniquement les données pertinentes. (Filtre)
+		<br>◽ <strong>Flexibilité et adaptabilité</strong>: S’adapte aux différentes configurations des bases de données MH.
+        <!--Le DataWiper est "générique", CAD, il est capable de purger nimporte quelles données des bases de données appartenant à HM (peut importe l'application):
+        <br>◽ Il parcours la hiérarchie d'une table (dépendance).
+        <br>◽ Il filtre les données à supprimer (filtres).
+        <br>◽ ...-->
         </p>
     </div>
     <!-- Conteneur de la popup pour afficher l'image en grand -->
