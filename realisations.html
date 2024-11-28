@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🛠️ Réalisations</title>
@@ -9,85 +9,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <a href="index.html"><li>Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li>Les projets</li></a><a href="realisations.html"><li class="enabled">Les réalisations</li></a><a href="conclusion.html"><li>Conslusion</li></a>
-        </ul>
+      <ul>
+        <a href="index.html"><li>Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li>Les projets</li></a><a href="realisations.html"><li class="enabled">Les réalisations</li></a><a href="conclusion.html"><li>Conslusion</li></a>
+      </ul>
     </nav>
     <div class="section" id="section1">
-        <h1>Les réalisations</h1>
-        <div class="flex-row">
-            <a href="#section2"><div class="card btn">
-                <h1>Création d'une entité</h1>
-            </div></a>
-            <a href="#section3"><div class="card btn">
-                <h1>Solution SQL</h1>
-            </div></a>
-            <a href="#section4"><div class="card btn">
-                <h1>Déploiement</h1>
-            </div></a>
-        </div>
+      <h1>Les réalisations</h1>
+    <p>
+
+        Dans ce projet, j’ai travaillé sur plusieurs aspects clés, allant de la conception à la mise en production, en suivant une architecture modulaire et maintenable. Les principales réalisations incluent :
+        <br>◽ Les couches d'architecture : Développement structuré autour des entités métiers, DTO, DAO, logique métier (Business Logic Layer), une API RESTful, et une interface client en MVC pour une expérience fluide.
+        <br>◽ La sécurité : Mise en œuvre de l’authentification via Negotiate et d’autorisations basées sur les groupes Active Directory (AD) pour garantir un accès sécurisé aux données.
+        <br>◽ La base de données : Conception et gestion d’une base relationnelle à l’aide d’un projet SQL dans Visual Studio, avec des optimisations pour garantir performance et fiabilité.
+        <br>◽ Le déploiement : Mise en place d’un pipeline CI/CD avec Azure DevOps pour automatiser les tests, la construction, et le déploiement de l’application.
+        <br>◽ Ces réalisations démontrent une maîtrise des différentes étapes du cycle de développement logiciel, de la conception technique à l’exploitation. Les sections suivantes détaillent chaque aspect.
+
+      </p>
+      <!--Ce projet repose sur une architecture logicielle modulaire et organisée en plusieurs couches interdépendantes, couvrant l’ensemble du cycle de vie des données, de leur modélisation à leur présentation côté client. Cette structure garantit une séparation des responsabilités, une maintenance facilitée et une grande évolutivité. Les principales réalisations incluent :
+      <br>◽ Gestion des données : Conception des modèles métiers (Entité métier), des structures d’échange (DTO), et des accès en base (DAO), avec une base de données relationnelle conçue dans un projet SQL via Visual Studio.
+      <br>◽ Logique métier et API : Implémentation des règles métiers (Business Logic Layer) et développement d’une API RESTful pour connecter le backend au frontend.
+      <br>◽ Sécurité : Mise en place de l’authentification via Negotiate et gestion des autorisations en fonction des groupes Active Directory (AD) de l’utilisateur.
+      <br>◽ Interface utilisateur : Intégration des données dans une architecture MVC pour une expérience utilisateur fluide et dynamique.
+      <br>◽ Déploiement : Automatisation du pipeline CI/CD et déploiement de l'application via Azure DevOps.
+      <div class="flex-row">
+<a href="#section2"><div class="card btn">
+<h1>Une Entité</h1>
+</div></a>
+<a href="#section3"><div class="card btn">
+<h1>Sécurité</h1>
+</div></a>
+<a href="#section4"><div class="card btn">
+<h1>SQL</h1>
+</div></a>
+<a href="#section5"><div class="card btn">
+<h1>Déploiement</h1>
+</div></a>
+</div>-->
     </div>
     <div class="section" id="section2">
-        <h1>Création d'une entité</h1>
-        <p>Pour illustré l'ensemble de ces étapes nous allons suivre le file sur la partie "<a href="#" onclick="afficherPopupImg('images/diagramme-sequence-users-datawiper.png')">utilisateur</a>" de l'application.</p>
-        <h2 id="1-1">L'entité métier</h2>
-        <p id="1-1-1">
-        </p>
-        <h2 id="1-2">Le modèle de données</h2>
-        <p id="1-2-1">
-        </p>
-        <h2 id="1-3">Adaptateur de persistance</h2>
-        <p id="1-3-1">
-        </p>
-        <h2 id="1-4">Service métier</h2>
-        <p id="1-4-1">
-            <!--
-            ❌✔❔◽
-        <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Aujourd'hui le SQLTheque, c'est environ 200 script SQL de stocker et de partager sur l'intranet.</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-consulter.png')">Une interface simple pour consuler et trier les scripts</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-ajouter-modifier.png')">Un éditeur SQL pour ajouter où modifier les scripts</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Une zone pour gérer les paramètres optionnels.</a>
-            <br><a href="#" onclick="afficherPopupImg('images/sqltheque-parametres.png')">Et enfin un écran pour executer avec des paramètres renseigner au choix.</a>
-        -->
-        </p>
-        <h2 id="1-5">Façade web du service (API web)</h2>
-        <p id="1-5-1">
-        </p>
-        <h2 id="1-6">(Coté client) Contrôleur et Vue</h2>
-        <p id="1-6-1">
-        </p>
+      <h1>Les couches d'architecture de l'application</h1>
+      <p>
+        Pour illustré l'ensemble de ces étapes nous allons examiner l'<a href="#" onclick="afficherPopupImg('images/diagramme-sequence-datawiper.png')">entité</a> "filtre" de l'application.</p>
+      <h2 id="1-1">L'entité métier (Domaine métier)</h2>
+      <p id="1-1-1">
+        ◽ Cette couche contient les concepts fondamentaux du domaine métier et leurs règles. Ces entités représentent des objets réels ou abstraits liés à notre domaine (par exemple, un filtre). Elles encapsulent les propriétés (attributs) et comportements (méthodes métier).
+      </p>
+      <h2 id="1-2">Le modèle de données (Data Transfert Object)</h2>
+      <p id="1-2-1">
+        ◽ Cette couche est directement liée à la structure de la base de données. Les objets dans cette couche reflètent les tables, les relations, et les colonnes de notre système de stockage.
+      </p>
+      <h2 id="1-3">Adaptateur de persistance (Data Access Object)</h2>
+      <p id="1-3-1">
+        ◽ Cette couche agit comme un intermédiaire entre notre service métier et la base de données. Elle abstrait les détails de l'accès aux données (CRUD) via des repositories ou des connecteurs.
+      </p>
+      <h2 id="1-4">Service métier (Business Logic Layer)</h2>
+      <p id="1-4-1">
+        ◽ C'est le chef d'orchestre de notre logique métier. Cette couche contient des cas d'utilisation spécifiques qui combinent plusieurs entités et données. Elle utilise les entités métier et les adaptateurs pour effectuer des opérations complexes en proposant une série de méthodes qui seront utilisables pour le client.
+      </p>
+      <h2 id="1-5">Façade web du service (API web)</h2>
+      <p id="1-5-1">
+        ◽ La couche qui sert de point d'entrée pour les clients externes. Elle expose les fonctionnalités de notre application sous forme d'API web (REST), reçoit les requêtes HTTP et communique avec la couche métier (BLL).
+      </p>
+      <h2 id="1-6">Contrôleur et Vue (Coté client)</h2>
+      <p id="1-6-1">
+        ◽ La partie interface utilisateur de notre application. Elle inclut la logique de contrôle et les éléments visuels permettant aux utilisateurs d’interagir avec le système.
+      </p>
 
-</div>
-<div class="section" id="section3">
-    <h1>Solution SQL</h1>
-    <h2 id="2-1">...</h2>
-    <p id="2-1-1">
-    </p>
-</div>
+    </div>
+    <div class="section" id="section3">
+      <h1>Sécurité</h1>
+      <p>
+        La sécurité de DataWiper repose sur deux axes: authentification et autorisation, essentiels pour contrôler l’identité et les droits d’accès.
+      </p>
+      <h2 id="3-1">Authentification</h2>
+      <p id="3-1-1">
+        ◽ Utilisation du schema Negotiate qui permet de s'authentifier via les sessions de Windows (avec popup login/mdp)
+      </p>
+      <h2 id="3-2">Autorisation</h2>
+      <p id="3-2-1">
+        ◽ Vérification dans le cache session des habilitations existantes.
+        <br>◽ Mise à jour en récupérant les groupes AD si les informations ne sont pas disponibles ou obsolètes.
+        <br>◽ Validation des droits d’accès (CRUD, applicatif, environnement).
+      </p>
+    </div>
 
-<div class="section" id="section4">
-    <h1>Déploiement</h1>
-    <h2 id="2-1">...</h2>
-    <p id="2-1-1">
-    </p>
-</div>
+    <div class="section" id="section4">
+      <h1>SQL</h1>
+    <p>
+        La base de données SQLServer pour DataWiper est conçue à partir d'un Modèle Conceptuel de Données (<a href="#" onclick="afficherPopupImg('images/uml-mdc-datawiper.png')">MCD</a>), puis transformée en un Projet SQL Server dans Visual Studio
+      <br>◽ Création d'un nouveau projet de type "Projet de base de données SQL Server" sous <strong>Visual Studio</strong>
+      <br>◽ Puis les tables peuvent etre crées simplement avec un "Designer", soit par script SQL
+      </p>
+      <!--<h2 id="2-1">Sous visual studio</h2>
+<p id="2-1-1">
+</p>-->
+    </div>
+
+    <div class="section" id="section5">
+      <h1>Déploiement</h1>
+      <p>
+        Le projet DataWiper est versionné sur Azure DevOps, qui gère la CI/CD (intégration continue/déploiement continu).
+      </p>
+      <h2 id="5-1">Solutions versionnées</h2>
+      <p id="5-1-1">
+        ◽ Application et base de données sont maintenues dans le repo Azure DevOps, avec plusieurs pipelines disponibles (Master, Dev, SQL, etc.).
+      <h2 id="5-2">Pipeline automatisé</h2>
+      <p id="5-2-1">
+        Lorsqu’un pipeline est exécuté (via Run Pipeline), Azure DevOps :
+      <br>◽ Compile et archive l’application.
+      <br>◽ Déploie automatiquement les fichiers nécessaires sur l’environnement cible.
+      <br>◽ Met à jour la base de données (scripts SQL déployés via le pipeline SQL).
+      </p>
+    </div>
 
     <!-- Conteneur de la popup pour afficher l'image en grand -->
-<div id="popup-img" onclick="fermerPopup()" class="popup">
-    <img id="popup-content" src="" alt="Image en grand">
-  </div>
+    <div id="popup-img" onclick="fermerPopup()" class="popup">
+      <img id="popup-content" src="" alt="Image en grand">
+    </div>
 
-	<footer>
-		<div class="footer-left">
-			<a href="#" id="previous"></a>
-		</div>
-		<div class="footer-right">
-			<a href="conclusion.html" id="next"></a>
-		</div>
-	</footer>
+    <footer>
+      <div class="footer-left">
+        <a href="#" id="previous"></a>
+      </div>
+      <div class="footer-right">
+        <a href="conclusion.html" id="next"></a>
+      </div>
+    </footer>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
