@@ -49,41 +49,41 @@
     <div class="section" id="section2">
       <h1>Les couches d'architecture de l'application</h1>
       <p>
-        Pour illustré l'ensemble de ces étapes nous allons examiner l'<a href="#" onclick="afficherPopupImg('images/diagramme-sequence-datawiper.png')">entité</a> "filtre" de l'application.</p>
+        Pour illustré l'ensemble de ces couches, je vais utiliser l'<a href="#" onclick="afficherPopupImg('images/diagramme-sequence-datawiper.png')">entité</a> Application de l'application.</p>
       <h2 id="1-1">L'entité métier (Domaine métier)</h2>
       <p id="1-1-1">
-        ◽ Cette couche contient les concepts fondamentaux du domaine métier et leurs règles. Ces entités représentent des objets réels ou abstraits liés à notre domaine (par exemple, un filtre). Elles encapsulent les propriétés (attributs) et comportements (méthodes métier).
+        ◽ Cette couche contient les concepts fondamentaux du domaine métier et leurs règles. Ces entités représentent des objets réels ou abstraits liés à notre domaine (par exemple, un filtre). Elles encapsulent les propriétés (attributs) et comportements (méthodes métier). <a href="#" onclick="afficherPopupImg('images/entite-application-datawiper.png')">Voir</a>.
       </p>
       <h2 id="1-2">Le modèle de données (Data Transfert Object)</h2>
       <p id="1-2-1">
-        ◽ Cette couche est directement liée à la structure de la base de données. Les objets dans cette couche reflètent les tables, les relations, et les colonnes de notre système de stockage.
+        ◽ Cette couche est directement liée à la structure de la base de données. Les objets dans cette couche reflètent les tables, les relations, et les colonnes de notre système de stockage. <a href="#" onclick="afficherPopupImg('images/model-application-datawiper.png')">Voir</a>.
       </p>
       <h2 id="1-3">Adaptateur de persistance (Data Access Object)</h2>
       <p id="1-3-1">
-        ◽ Cette couche agit comme un intermédiaire entre notre service métier et la base de données. Elle abstrait les détails de l'accès aux données (CRUD) via des repositories ou des connecteurs.
+        ◽ Cette couche agit comme un intermédiaire entre notre service métier et la base de données. Elle abstrait les détails de l'accès aux données (CRUD) via des repositories ou des connecteurs. <a href="#" onclick="afficherPopupImg('images/adaptateur-persistance-application-datawiper.png')">Voir</a>.
       </p>
       <h2 id="1-4">Service métier (Business Logic Layer)</h2>
       <p id="1-4-1">
-        ◽ C'est le chef d'orchestre de notre logique métier. Cette couche contient des cas d'utilisation spécifiques qui combinent plusieurs entités et données. Elle utilise les entités métier et les adaptateurs pour effectuer des opérations complexes en proposant une série de méthodes qui seront utilisables pour le client.
+        ◽ C'est le chef d'orchestre de notre logique métier. Cette couche contient des cas d'utilisation spécifiques qui combinent plusieurs entités et données. Elle utilise les entités métier et les adaptateurs pour effectuer des opérations complexes en proposant une série de méthodes qui seront utilisables pour le client. <a href="#" onclick="afficherPopupImg('images/domaine-application-datawiper.png')">Voir</a>.
       </p>
       <h2 id="1-5">Façade web du service (API web)</h2>
       <p id="1-5-1">
-        ◽ La couche qui sert de point d'entrée pour les clients externes. Elle expose les fonctionnalités de notre application sous forme d'API web (REST), reçoit les requêtes HTTP et communique avec la couche métier (BLL).
+        ◽ La couche qui sert de point d'entrée pour les clients externes. Elle expose les fonctionnalités de notre application sous forme d'API web (REST), reçoit les requêtes HTTP et communique avec la couche métier (BLL). <a href="#" onclick="afficherPopupImg('images/controller-application-datawiper.png')">Voir</a>.
       </p>
       <h2 id="1-6">Contrôleur et Vue (Coté client)</h2>
       <p id="1-6-1">
-        ◽ La partie interface utilisateur de notre application. Elle inclut la logique de contrôle et les éléments visuels permettant aux utilisateurs d'interagir avec le système.
+        ◽ La partie interface utilisateur de notre application. Elle inclut la logique de contrôle et les éléments visuels permettant aux utilisateurs d'interagir avec le système. <a href="#" onclick="afficherPopupImg('images/view-application-datawiper.png')">Voir</a>.
       </p>
 
     </div>
     <div class="section" id="section3">
       <h1>Sécurité</h1>
       <p>
-        La sécurité de DataWiper repose sur deux axes: authentification et autorisation, essentiels pour contrôler l'identité et les droits d'accès.
+        La sécurité de DataWiper repose sur deux axes: <a href="#" onclick="afficherPopupImg('images/authentification-datawiper.png')">authentification</a> et <a href="#" onclick="afficherPopupImg('images/autorisation-datawiper.png')">autorisation</a>, essentiels pour contrôler l'identité et les droits d'accès.
       </p>
       <h2 id="3-1">Authentification</h2>
       <p id="3-1-1">
-        ◽ Utilisation du schema Negotiate qui permet de s'authentifier via les sessions de Windows (avec popup login/mdp)
+        ◽ Utilisation du schema Negotiate qui permet de s'authentifier via les sessions de Windows (avec popup login/mdp).
       </p>
       <h2 id="3-2">Autorisation</h2>
       <p id="3-2-1">
@@ -96,9 +96,9 @@
     <div class="section" id="section4">
       <h1>SQL</h1>
     <p>
-        La base de données SQLServer pour DataWiper est conçue à partir d'un Modèle Conceptuel de Données (<a href="#" onclick="afficherPopupImg('images/uml-mdc-datawiper.png')">MCD</a>), puis transformée en un Projet SQL Server dans Visual Studio
-      <br>◽ Création d'un nouveau projet de type "Projet de base de données SQL Server" sous <a href="#" onclick="afficherPopupImg('images/projet-sql.png')">Visual Studio</a>
-      <br>◽ Puis les tables peuvent etre crées simplement avec un "Designer", soit par script SQL
+      La base de données SQLServer pour DataWiper est conçue à partir d'un Modèle Conceptuel de Données (<a href="#" onclick="afficherPopupImg('images/uml-mdc-datawiper.png')">MCD</a>), puis transformée en un Projet SQL Server dans Visual Studio.
+      <br>◽ Création d'un nouveau projet de type « Projet de base de données SQL Server » dans <a href="#" onclick="afficherPopupImg('images/projet-sql.png')">Visual Studio</a>.
+      <br>◽ Les tables peuvent ensuite être créées facilement à l'aide d'un "Designer" visuel ou par l'écriture de scripts.
       </p>
       <!--<h2 id="2-1">Sous visual studio</h2>
 <p id="2-1-1">
@@ -109,6 +109,11 @@
       <h1>Déploiement</h1>
       <p>
         Le projet DataWiper est versionné sur Azure DevOps, qui gère la CI/CD (intégration continue/déploiement continu).
+        <br>En images: 
+        <a href="#" onclick="afficherPopupImg('images/azuredevops-1-datawiper.png')">1</a> -  
+        <a href="#" onclick="afficherPopupImg('images/azuredevops-2-datawiper.png')">2</a> -  
+        <a href="#" onclick="afficherPopupImg('images/azuredevops-3-datawiper.png')">3</a> 
+
       </p>
       <h2 id="5-1">Solutions versionnées</h2>
       <p id="5-1-1">
