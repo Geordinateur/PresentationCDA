@@ -19,14 +19,11 @@
     <div class="section" id="section1">
       <h1>Les réalisations</h1>
     <p>
-
-        Dans ce projet, j’ai travaillé sur plusieurs aspects clés, allant de la conception à la mise en production, en suivant une architecture modulaire et maintenable. Les principales réalisations incluent :
-        <br>◽ Les couches d'architecture : Développement structuré autour des entités métiers, DTO, DAO, logique métier (Business Logic Layer), une API RESTful, et une interface client en MVC pour une expérience fluide.
-        <br>◽ La sécurité : Mise en œuvre de l’authentification via Negotiate et d’autorisations basées sur les groupes Active Directory (AD) pour garantir un accès sécurisé aux données.
-        <br>◽ La base de données : Conception et gestion d’une base relationnelle à l’aide d’un projet SQL dans Visual Studio, avec des optimisations pour garantir performance et fiabilité.
-        <br>◽ Le déploiement : Mise en place d’un pipeline CI/CD avec Azure DevOps pour automatiser les tests, la construction, et le déploiement de l’application.
-        <br>◽ Ces réalisations démontrent une maîtrise des différentes étapes du cycle de développement logiciel, de la conception technique à l’exploitation. Les sections suivantes détaillent chaque aspect.
-
+       Les principales réalisations incluent :
+        <br>◽ Les couches d'architecture: Entités métiers, DTO, DAO, BLL, une API REST, et une interface client en MVC.
+        <br>◽ La sécurité : Mise en œuvre de l'authentification via Negotiate et d'autorisations basées sur les groupes Active Directory.
+        <br>◽ La base de données : Conception et gestion d'une base relationnelle à l'aide d'un projet SQL dans Visual Studio.
+        <br>◽ Le déploiement : Mise en place d'un pipeline CI/CD avec Azure DevOps pour automatiser les tests, la construction, et le déploiement de l'application.
       </p>
       <!--Ce projet repose sur une architecture logicielle modulaire et organisée en plusieurs couches interdépendantes, couvrant l’ensemble du cycle de vie des données, de leur modélisation à leur présentation côté client. Cette structure garantit une séparation des responsabilités, une maintenance facilitée et une grande évolutivité. Les principales réalisations incluent :
       <br>◽ Gestion des données : Conception des modèles métiers (Entité métier), des structures d’échange (DTO), et des accès en base (DAO), avec une base de données relationnelle conçue dans un projet SQL via Visual Studio.
@@ -75,14 +72,14 @@
       </p>
       <h2 id="1-6">Contrôleur et Vue (Coté client)</h2>
       <p id="1-6-1">
-        ◽ La partie interface utilisateur de notre application. Elle inclut la logique de contrôle et les éléments visuels permettant aux utilisateurs d’interagir avec le système.
+        ◽ La partie interface utilisateur de notre application. Elle inclut la logique de contrôle et les éléments visuels permettant aux utilisateurs d'interagir avec le système.
       </p>
 
     </div>
     <div class="section" id="section3">
       <h1>Sécurité</h1>
       <p>
-        La sécurité de DataWiper repose sur deux axes: authentification et autorisation, essentiels pour contrôler l’identité et les droits d’accès.
+        La sécurité de DataWiper repose sur deux axes: authentification et autorisation, essentiels pour contrôler l'identité et les droits d'accès.
       </p>
       <h2 id="3-1">Authentification</h2>
       <p id="3-1-1">
@@ -92,7 +89,7 @@
       <p id="3-2-1">
         ◽ Vérification dans le cache session des habilitations existantes.
         <br>◽ Mise à jour en récupérant les groupes AD si les informations ne sont pas disponibles ou obsolètes.
-        <br>◽ Validation des droits d’accès (CRUD, applicatif, environnement).
+        <br>◽ Validation des droits d'accès (CRUD, applicatif, environnement).
       </p>
     </div>
 
@@ -100,7 +97,7 @@
       <h1>SQL</h1>
     <p>
         La base de données SQLServer pour DataWiper est conçue à partir d'un Modèle Conceptuel de Données (<a href="#" onclick="afficherPopupImg('images/uml-mdc-datawiper.png')">MCD</a>), puis transformée en un Projet SQL Server dans Visual Studio
-      <br>◽ Création d'un nouveau projet de type "Projet de base de données SQL Server" sous <strong>Visual Studio</strong>
+      <br>◽ Création d'un nouveau projet de type "Projet de base de données SQL Server" sous <a href="#" onclick="afficherPopupImg('images/projet-sql.png')">Visual Studio</a>
       <br>◽ Puis les tables peuvent etre crées simplement avec un "Designer", soit par script SQL
       </p>
       <!--<h2 id="2-1">Sous visual studio</h2>
@@ -118,9 +115,9 @@
         ◽ Application et base de données sont maintenues dans le repo Azure DevOps, avec plusieurs pipelines disponibles (Master, Dev, SQL, etc.).
       <h2 id="5-2">Pipeline automatisé</h2>
       <p id="5-2-1">
-        Lorsqu’un pipeline est exécuté (via Run Pipeline), Azure DevOps :
-      <br>◽ Compile et archive l’application.
-      <br>◽ Déploie automatiquement les fichiers nécessaires sur l’environnement cible.
+        Lorsqu'un pipeline est exécuté (via Run Pipeline), Azure DevOps :
+      <br>◽ Compile et archive l'application.
+      <br>◽ Déploie automatiquement les fichiers nécessaires sur l'environnement cible.
       <br>◽ Met à jour la base de données (scripts SQL déployés via le pipeline SQL).
       </p>
     </div>
