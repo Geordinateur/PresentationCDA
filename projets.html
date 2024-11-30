@@ -13,7 +13,7 @@
 <body>
     <nav>
         <ul>
-            <a href="index.html"><li>Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li class="enabled">Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conslusion</li></a>
+            <a href="index.html"><li>Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li class="enabled">Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a>
         </ul>
     </nav>
     <div class="section" id="section17">
@@ -49,15 +49,12 @@
         <h2 id="3-2">Gestion de projet</h2>
         <p id="3-2-1">
             <a href="#" onclick="afficherPopupImg('images/diagramme-gantt-pleiade.png')">Pléiade</a> est maintenu et évolue via une série de projets structurés qui suivent un <a href="#" onclick="afficherPopupImg('images/cycle-en-v.png')">cycle en V</a>: 
-            <br>◽ <strong>Définition du périmètre</strong>: Identification des besoins et des fonctionnalités à développer ou à 
-            améliorer.
+            <br>◽ <strong>Définition du périmètre</strong>: Identification des besoins et des fonctionnalités à développer ou à améliorer.
             <br>◽ <strong>Conception</strong>: Modélisation et architecture des solutions techniques.
             <br>◽ <strong>Spécifications</strong>: Rédaction des spécifications fonctionnelles et techniques.
             <br>◽ <strong>Développement</strong>: Phase de codage des nouvelles fonctionnalités et corrections.
-            <br>◽ <strong>Tests de Validation Interne (TVI)</strong>: Tests initiaux réalisés en interne pour vérifier la conformité 
-            aux spécifications.
-            <br>◽ <strong>Recette (Tests de Recette Fonctionnelle - TRF)</strong>: Phase de tests utilisateurs, où la version est 
-            validée en conditions réelles avant le déploiement.
+            <br>◽ <strong>Tests de Validation Interne (TVI)</strong>: Tests initiaux réalisés en interne pour vérifier la conformité aux spécifications.
+            <br>◽ <strong>Recette (Tests de Recette Fonctionnelle - TRF)</strong>: Phase de tests utilisateurs, où la version est validée en conditions réelles avant le déploiement.
             <br>◽ <strong>Tests de préproduction</strong>: Dernière phase de validation avant la mise en production.
             </p>
         <h2 id="3-3">Test de Non Régression Automatisé</h2>
@@ -65,7 +62,8 @@
             L'automatisation des tests de non-régression garantit la stabilité des fonctionnalités existantes en détectant rapidement les éventuelles régressions provoquées par de nouvelles modifications.
             <br>◽ <a href="#" onclick="afficherPopupImg('images/x-page.png')">X_page</a>: Regroupe les déclarations nécessaires à l'exécution des tests, notamment les composants et éléments ciblés.
             <br>◽ <a href="#" onclick="afficherPopupImg('images/x-test.png')">X_test</a>: Contient les étapes et instructions détaillées des scénarios de test à exécuter.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/resultats-plan-de-test.png')">Analyse des résultats</a>: Les résultats des tests sont centralisés et référencés dans Azure DevOps, où ils peuvent être exécutés, suivis et analysés.
+			<br>◽ Les tests peuvent également être reférencier sur Azure DevOps, ce qui leurs permettent d'utiliser des <a href="#" onclick="afficherPopupImg('images/cas-de-test.png')">Paramètres dynamiques</a>.
+            <br>◽ <a href="#" onclick="afficherPopupImg('images/resultats-plan-de-test.png')">Analyse des résultats</a>: Les résultats des tests sont centralisés et référencés dans Azure DevOps, où ils peuvent être exécutés, suivis et analysés. 
         </p>
     </div>
     <div class="section" id="section19">
@@ -112,13 +110,10 @@
         <h2 id="2-5">Comment s'y prend-il?</h2>
         <p id="2-5-1">
 		Le DataWiper est conçu pour être <strong>générique</strong>, c'est-à-dire qu'il peut purger les données de n'importe quelle base de données appartenant à MH, quelle que soit l'application concernée :
+		<!-- POINT A AMÉLIORER!!!!! -->
 		<br>◽ <strong>Parcours de la hiérarchie des tables</strong>: Identifie et respecte les relations de dépendance entre les tables.
 		<br>◽ <strong>Filtrage des données à supprimer</strong>: Applique des critères spécifiques pour cibler uniquement les données pertinentes. (Filtre)
 		<br>◽ <strong>Flexibilité et adaptabilité</strong>: S'adapte aux différentes configurations des bases de données MH.
-        <!--Le DataWiper est "générique", CAD, il est capable de purger nimporte quelles données des bases de données appartenant à HM (peut importe l'application):
-        <br>◽ Il parcours la hiérarchie d'une table (dépendance).
-        <br>◽ Il filtre les données à supprimer (filtres).
-        <br>◽ ...-->
         </p>
     </div>
     <!-- Conteneur de la popup pour afficher l'image en grand -->
