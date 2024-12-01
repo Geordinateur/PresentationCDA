@@ -1,8 +1,45 @@
+Bonjour à tous et bienvenue !
+
+MA PRÉSENTATION
+Je m’appelle Georges, et je suis papa de deux garçons, dont un tout petit de 9 mois. Son arrivée n’a pas été de tout repos : il a déjà un sacré caractère ! Ajoutez à cela les 300 km qui me séparent de ma famille, et le défi de cette reconversion professionnelle qui me tient particulièrement à cœur... autant dire que ce fut une aventure intense. Si je partage cela avec vous, c’est parce que, dans cette période, être père est à la fois ma plus grande joie et mon principal défi !
+
+Ma reconversion a commencé il y a trois ans. Avant cela, je travaillais dans les travaux publics, en tant que manoeuvre, derriere un finisseur, où je m’occupais notamment de la planimétrie et du compactage des enrobés. Mais ma véritable passion se trouvait ailleurs : dans le développement informatique.
+
+J’ai pris mon courage à deux mains et commencé à re apprendre par moi-même, notamment grâce à OpenClassrooms. J’ai obtenu un premier diplôme en développement web, avec quelques soutenances parfois imparfaites, mais aussi un projet solide en VueJS.
+
+Cette alternance chez Malakoff Humanis, que j’ai eu la chance d’intégrer pour deux ans, représente une étape clé dans ma reconversion et dans la construction de ma nouvelle carrière.
+
+MALAKOFF HUMANIS
+Malakoff Humanis est un groupe de protection sociale paritaire et mutualiste, à but non lucratif. Il se distingue comme l’un des leaders de la protection sociale en France, offrant une large gamme de produits et services aux entreprises et aux particuliers : mutuelle santé, prévoyance, épargne, et retraite.
+
+Le groupe accompagne plus de 5,5 millions de clients, 70 000 entreprises, grâce à ses 9 000 collaborateurs.
+
+Pour ma part, j’ai rejoint l’équipe CONTRAT GESTION INDIVIDUELLE ET SERVICE à une date mémorable : la veille de Noël ! Sous la direction d’Éric, cette équipe gère tout ce qui touche aux contrats des particuliers : identité, bénéficiaires, radiations, échanges avec la Sécurité Sociale, et bien d’autres aspects liés à l’application Pléiade.
+
+Cette activité fait partie intégrante du pôle MH TECH, qui centralise les solutions technologiques au service du groupe.
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
 Bonjour à tous et bienvenue!
 
-Je m'appel Georges, j'ai commencer ma reconversion il y a maintenant 3 ans. Je suis papa de 2 garcon, un de 9 ans et un tout petit de 9 mois! La naissance du dernier n'a pas été facile non seulement parceque c'est pas le meme tempérament que le premier, mais en plus que je suis à 400kms de la maison et j'essaie de rester focus sur mon objectif professionel! lorsque j'étais derriere le finisseur à régler la planimetrie des enrobés, je me posais la questions de si j'allais pouvoir continuer a faire ca toute ma vie avec l'unique motivation de faire de beau revetement de sol... hmmm non pas sur! Au tout début moi je suis passionné de bidoulliage de partage et surtout d'ordinateur! Bref
+***MA PRESENTATION***
+Je m'appel Georges, 
 
-Pour cette alternance j'ai été embauché chez Malakoff Humanis pour une durée de 2 ans, qui sont-ils? c'est un groupe de protection sociale paritaire et mutualiste à but non lucratif. 
+Je suis papa de 2 garcon, dont un de 9 mois! L'arriver de ce petit derniers n'a pas été facile non seulement parcequ'il a son charactere bien a lui, mais en plus que je suis à 300kms de la maison et enfin et surtout parce que cette reconversion me tiens a enormement a coeur et que j'aimerai ne pas perd le fil de celle ci! Si je vous partage cela c'est que c'est a la fois mon meilleurs hobbies et ma plus grande difficulte dans cette aventure!
+
+J'ai commencer ma reconversion il y a maintenant 3 ans. Avant je suivais un finisseur a paufine la planimetrie des enrobes, ou meme a les compacter, mais ma vrai passion etait ailleur.
+
+A l'aide de openclassrooms, j'ai obtenue mon premier diplome de developpeur web a l'aide de quelques soutenance un peu bacle, et d'un projet VueJS.
+
+Pour cette alternance j'ai été embauché chez Malakoff Humanis pour une durée de 2 ans, 
+
+***MALAKOFF HUMANIS***
+qui sont-ils? c'est un groupe de protection sociale paritaire et mutualiste à but non lucratif. 
 Le groupe propose plusieur gamme de produits et services de protection sociale aux entreprises et aux particuliers, notament: mutuelle santé, prévoyance, épargne, retraite
 
 C'est l'un des leaders de la protection sociale en France, avec plus de 5,5 millions de clients, 70 000 entreprises et 9000 collaborateurs.
@@ -56,3 +93,5 @@ la base de donnée relationnelle , avec des optimisations pour garantir performa
 Dans ce projet, j'ai travaillé sur plusieurs aspects clés, allant de la conception à la mise en production, en suivant une architecture modulaire et maintenable. 
 
 Ces réalisations démontrent une maîtrise des différentes étapes du cycle de développement logiciel, de la conception technique à l'exploitation. Les sections suivantes détaillent chaque aspect.
+
+lorsque j'étais derriere le finisseur à régler la planimetrie des enrobés, je me posais la questions de si j'allais pouvoir continuer a faire ca toute ma vie avec l'unique motivation de faire de beau revetement de sol... hmmm non pas sur! Au tout début moi je suis passionné de bidoulliage de partage et surtout d'ordinateur! Bref
