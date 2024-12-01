@@ -3,7 +3,7 @@ Bonjour à tous et bienvenue !
 MA PRÉSENTATION
 Je m’appelle Georges, et je suis papa de deux garçons, dont un tout petit de 9 mois. Son arrivée n’a pas été de tout repos : il a déjà un sacré caractère ! Ajoutez à cela les 300 km qui me séparent de ma famille, et le défi de cette reconversion professionnelle qui me tient particulièrement à cœur... autant dire que ce fut une aventure intense. Si je partage cela avec vous, c’est parce que, dans cette période, être père est à la fois ma plus grande joie et mon principal défi !
 
-Ma reconversion a commencé il y a trois ans. Avant cela, je travaillais dans les travaux publics, en tant que manoeuvre, derriere un finisseur, où je m’occupais notamment de la planimétrie et du compactage des enrobés. Mais ma véritable passion se trouvait ailleurs : dans le développement informatique.
+Ma reconversion a débuté il y a trois ans. Avant cela, je travaillais dans les travaux publics en tant que manœuvre, derrière un finisseur, où je m’occupais de la planimétrie et du compactage des enrobés. Cependant, ma véritable passion se trouvait ailleurs : j’ai toujours été fasciné par le fonctionnement d’Internet, notamment par la création et l’interaction des sites web, ainsi que par la gestion et la manipulation des systèmes.
 
 J’ai pris mon courage à deux mains et commencé à re apprendre par moi-même, notamment grâce à OpenClassrooms. J’ai obtenu un premier diplôme en développement web, avec quelques soutenances parfois imparfaites, mais aussi un projet solide en VueJS.
 
@@ -17,6 +17,15 @@ Le groupe accompagne plus de 5,5 millions de clients, 70 000 entreprises, grâ
 Pour ma part, j’ai rejoint l’équipe CONTRAT GESTION INDIVIDUELLE ET SERVICE à une date mémorable : la veille de Noël ! Sous la direction d’Éric, cette équipe gère tout ce qui touche aux contrats des particuliers : identité, bénéficiaires, radiations, échanges avec la Sécurité Sociale, et bien d’autres aspects liés à l’application Pléiade.
 
 Cette activité fait partie intégrante du pôle MH TECH, qui centralise les solutions technologiques au service du groupe.
+
+IN ENGLISH
+Today, I am here to present the DataWiper project, a solution designed to help Malakoff Humanis comply with the European General Data Protection Regulation, which requires the secure and proper deletion of outdated or sensitive data. Meeting these requirements can be challenging, especially given the complexity and interconnected nature of Malakoff Humanis's databases.
+
+DataWiper addresses this challenge by providing a flexible and automated tool capable of deleting data from any database used within the organization. It carefully respects the hierarchy of tables, ensures that dependencies are managed correctly, and uses detailed filters to precisely target the data that needs to be removed.
+
+This project has greatly improved the company’s ability to comply with regulations, making data deletion processes faster, more reliable, and more secure. DataWiper is now an essential part of the organization's data management and its commitment to maintaining high standards of security and compliance.
+
+
 
 
 
@@ -46,13 +55,11 @@ C'est l'un des leaders de la protection sociale en France, avec plus de 5,5 mill
 
 J'ai été accueillit dans l'équipe CONTRAT GESTION INDIVIDUELLE ET SERVICE par Éric la VEILLE DE NOEL!, cette équipe ce concentre sur tous les sujet abordant les contrats des particuliers, leur identité, leur bénéficaires, les radiation, les échanges avec la sécu et pleins d'autre de l'application Pléiade. c'est de la gestion directe qui fait partie du pole MH TECH! 
 
-
 Today, I’ll introduce the DataWiper project, a tool designed to ensure HM complies with GDPR requirements for secure data deletion. GDPR mandates that organizations must safely and efficiently remove outdated or sensitive data, which can be challenging given the complexity of HM’s databases.
 
 DataWiper addresses this by offering a generic and automated solution capable of purging data from any database within HM. It respects table hierarchies, ensures dependencies are handled correctly, and uses advanced filtering to precisely target the data to delete.
 
 This tool has streamlined HM’s compliance process, reducing risks, saving time, and ensuring all data purging operations are both efficient and secure, making it an essential part of HM's data governance strategy.
-
 
 À présent, je vais vous parler de mes projets, principalement du DataWiper, mais afin de valider au maximum de compétences demandées, je vais évoquer succintivement quelques points des autres projets auquel j'ai pu participer, comme Pléiade, et le SQLTheque.
 
@@ -62,7 +69,6 @@ C'est 1500 utilisateurs simultané qui interagissent avec l'application pour la 
 C'est 35 serveurs de productions virtualisés et plus de 5 millions de lignes de code.
 
 ** LECTURE DE LA PRESENTATION **
-
 J'ai été amené à rediger des TNRA pour la partie PRODUIT. Des tests de non régression automatisé, ils garantissent la stabilité des fonctionnalités existantes en detectant rapidement les éventuelles régressions provoquées par de nouvelles modifications. pour cela il faut code 2 élément principale, une "X_Page" et une "X_Test".
 La "Page" regroupe les déclarations nécessaires à l'éxécution des tests, notamement les composants et éléments qui seront ciblés, qui devra hérité de "PageBase" qui est une classe abstraite représentant un test et qui va aider dans le déroulement d'un test avec certaine méthodes.
 La partie "Test" contient les étapes et instructions détaillées des scénarios de test à éxécuter, un "TestCategory" devra etre renseigner pour facilité le rangement sur Azure DevOps.

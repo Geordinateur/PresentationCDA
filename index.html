@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📜 Introduction</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <nav>
-        <ul>
-          <a href="index.html"><li class="enabled">Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li>Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a>
-        </ul>
+      <ul>
+        <a href="index.html"><li class="enabled">Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li>Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a>
+      </ul>
     </nav>
     <div class="section" id="section-intro">
-      
-		<h1><img src="images/logo-mh-smile.png" class="img-shadow"></img></h1>
-        <!--<h1>Introduction</h1>-->
-        <div class="flex-row">
+      <h1><img src="images/logo-mh-smile.png" class="img-shadow"></img></h1>
+      <!--<h1>Introduction</h1>-->
+      <div class="flex-row">
         <div class="card btn">
-            <h1>Georges Grignard</h1>
-			<p>
-            <a href="#" onclick="afficherPopupImg('images/qui-suis-je.png')" >Qui suis-je?</a> / 
+          <h1>Georges Grignard</h1>
+          <p>
+            <!--<a href="#" onclick="afficherPopupImg('images/qui-suis-je.png')" >Qui suis-je?</a> / -->
             En photos: <a href="#" onclick="afficherPopupImg('images/gg-photo-1.jpg')" >1</a> - 
             <a href="#" onclick="afficherPopupImg('images/gg-photo-2.jpg')" >2</a> - 
-            <a href="#" onclick="afficherPopupImg('images/gg-photo-3.jpg')" >3</a>
-			</p>
+            <a href="#" onclick="afficherPopupImg('images/gg-photo-3.png')" >3</a> - 
+            <a href="#" onclick="afficherPopupImg('images/gg-photo-4.jpg')" >4</a>
+          </p>
         </div>
         <div class="card btn">
           <h1>Malakoff Humanis</h1>
@@ -40,20 +40,20 @@
       </div>
     </div>
     <div class="section" id="section-intro-wallpaper-usa">
-		<img src="images/drapeau-usa.png" class="drapeau-usa"></img>
+      <img src="images/drapeau-usa.png" class="drapeau-usa"></img>
     </div>
-<!-- Conteneur de la popup pour afficher l'image en grand -->
-<div id="popup-img" onclick="fermerPopup()" class="popup">
-  <img id="popup-content" src="" alt="Image en grand">
-</div>
-	<footer>
-		<div class="footer-left">
-			<a href="#" id="previous"></a>
-		</div>
-		<div class="footer-right">
-			<a href="projets.html" id="next"></a>
-		</div>
-	</footer>
+    <!-- Conteneur de la popup pour afficher l'image en grand -->
+    <div id="popup-img" onclick="fermerPopup()" class="popup">
+      <img id="popup-content" src="" alt="Image en grand">
+    </div>
+    <footer>
+      <div class="footer-left">
+        <a href="#" id="previous"></a>
+      </div>
+      <div class="footer-right">
+        <a href="projets.html" id="next"></a>
+      </div>
+    </footer>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
