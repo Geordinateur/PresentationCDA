@@ -222,12 +222,22 @@ background-color: #f44336;
 #section19 {
   background: linear-gradient(#006374, #002b3a);
 }
-#section20 {
+#section20x {
   background: linear-gradient(#FF4B33, #E2250C);
 }
-#section21 {
+#section21x {
   background: linear-gradient(#E2250C, #FF4B33);
 }
+
+#section20 {
+  background: linear-gradient(#006374, #002b3a);
+}
+#section21 {
+  background: linear-gradient(#002b3a, #006374);
+}
+
+
+
 #section22 {
   background: linear-gradient(#6D4CA7, #4B218E);
 }
