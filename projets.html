@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🚀 Projets</title>
@@ -9,125 +9,193 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <a href="index.html"><li>Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li class="enabled">Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a>
-        </ul>
+      <ul>
+        <a href="index.html"><li>Introduction</li></a><a href="projets.html"><li class="enabled">Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a><li class="spacer"></li><a href="#" id="open-form"><li class="nav-competences">🎯</li></a>
+      </ul>
     </nav>
     <div class="section" id="section17">
-        <h1>Les projets</h1>
-        <p>3 projets ont été choisi afin de couvrir le maximum de compétences demandées.</p>
-        <div class="flex-row">
-            <a href="#" id="a-pleiade">
-                <div class="card btn disabled">
-                    <h1>Pléiade</h1>
-                </div>
-            </a>
-            <a href="#" id="a-sqltheque">
-                <div class="card btn disabled">
-                    <h1>SQLTheque</h1>
-                </div>
-            </a>
-            <a href="#" id="a-datawiper">
-                <div class="card btn">
-                    <h1>DataWiper</h1>
-                </div>
-            </a>
-        </div>
+      <h1>Les projets</h1>
+      <p>3 projets ont été choisi afin de couvrir le maximum de compétences demandées.</p>
+      <div class="flex-row">
+        <a href="#" id="a-pleiade">
+          <div class="card btn disabled">
+            <h1>Pléiade</h1>
+          </div>
+        </a>
+        <a href="#" id="a-sqltheque">
+          <div class="card btn disabled">
+            <h1>SQLTheque</h1>
+          </div>
+        </a>
+        <a href="#" id="a-datawiper">
+          <div class="card btn">
+            <h1>DataWiper</h1>
+          </div>
+        </a>
+      </div>
     </div>
     <div class="section" id="section18">
-        <h1>Pléiade</h1>
-        <h2 id="3-1">Présentation de l'outil</h2>
-        <p id="3-1-1">
-            ◽ C'est la solution propriétaire du groupe MH pour la gestion des contrats.
-            <br>◽ <strong>1500 utilisateurs simultané</strong> qui interagissent avec l'application pour la gestion des contrats.
-            <br>◽ <strong>35 serveurs de production</strong> virtualisés.
-            <br>◽ <strong>Plus de 5 millions de lignes de code</strong> maintenues et évolutives.
-        </p>
-        <h2 id="3-2">Gestion de projet</h2>
-        <p id="3-2-1">
-            <a href="#" onclick="afficherPopupImg('images/diagramme-gantt-pleiade.png')">Pléiade</a> est maintenu et évolue via une série de projets structurés qui suivent un <a href="#" onclick="afficherPopupImg('images/cycle-en-v.png')">cycle en V</a>: 
-            <br>◽ <strong>Définition du périmètre</strong>: Identification des besoins et des fonctionnalités à développer ou à améliorer.
-            <br>◽ <strong>Conception</strong>: Modélisation et architecture des solutions techniques.
-            <br>◽ <strong>Spécifications</strong>: Rédaction des spécifications fonctionnelles et techniques.
-            <br>◽ <strong>Développement</strong>: Phase de codage des nouvelles fonctionnalités et corrections.
-            <br>◽ <strong>Tests de Validation Interne (TVI)</strong>: Tests initiaux réalisés en interne pour vérifier la conformité aux spécifications.
-            <br>◽ <strong>Recette (Tests de Recette Fonctionnelle - TRF)</strong>: Phase de tests utilisateurs, où la version est validée en conditions réelles avant le déploiement.
-            <br>◽ <strong>Tests de préproduction</strong>: Dernière phase de validation avant la mise en production.
-            </p>
-        <h2 id="3-3">Test de Non Régression Automatisé</h2>
-        <p id="3-3-1">
-            L'automatisation des tests de non-régression garantit la stabilité des fonctionnalités existantes en détectant rapidement les éventuelles régressions provoquées par de nouvelles modifications.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/x-page.png')">X_page</a>: Regroupe les déclarations nécessaires à l'exécution des tests, notamment les composants et éléments ciblés.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/x-test.png')">X_test</a>: Contient les étapes et instructions détaillées des scénarios de test à exécuter.
-			<br>◽ Les tests peuvent également être reférencier sur Azure DevOps, ce qui leurs permettent d'utiliser des <a href="#" onclick="afficherPopupImg('images/cas-de-test.png')">Paramètres dynamiques</a>.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/resultats-plan-de-test.png')">Analyse des résultats</a>: Les résultats des tests sont centralisés et référencés dans Azure DevOps, où ils peuvent être exécutés, suivis et analysés. 
-        </p>
+      <h1>Pléiade</h1>
+      <h2 id="3-1">Présentation de l'outil</h2>
+      <p id="3-1-1">
+        ◽ C'est la solution propriétaire du groupe MH pour la gestion des contrats.
+        <br>◽ <strong>1500 utilisateurs simultané</strong> qui interagissent avec l'application pour la gestion des contrats.
+        <br>◽ <strong>35 serveurs de production</strong> virtualisés.
+        <br>◽ <strong>Plus de 5 millions de lignes de code</strong> maintenues et évolutives.
+      </p>
+      <h2 id="3-2">Gestion de projet</h2>
+      <p id="3-2-1">
+        <a href="#" onclick="afficherPopupImg('images/diagramme-gantt-pleiade.png')">Pléiade</a> est maintenu et évolue via une série de projets structurés qui suivent un <a href="#" onclick="afficherPopupImg('images/cycle-en-v.png')">cycle en V</a>: 
+        <br>◽ <strong>Définition du périmètre</strong>: Identification des besoins et des fonctionnalités à développer ou à améliorer.
+        <br>◽ <strong>Conception</strong>: Modélisation et architecture des solutions techniques.
+        <br>◽ <strong>Spécifications</strong>: Rédaction des spécifications fonctionnelles et techniques.
+        <br>◽ <strong>Développement</strong>: Phase de codage des nouvelles fonctionnalités et corrections.
+        <br>◽ <strong>Tests de Validation Interne (TVI)</strong>: Tests initiaux réalisés en interne pour vérifier la conformité aux spécifications.
+        <br>◽ <strong>Recette (Tests de Recette Fonctionnelle - TRF)</strong>: Phase de tests utilisateurs, où la version est validée en conditions réelles avant le déploiement.
+        <br>◽ <strong>Tests de préproduction</strong>: Dernière phase de validation avant la mise en production.
+      </p>
+      <h2 id="3-3">Test de Non Régression Automatisé</h2>
+      <p id="3-3-1">
+        L'automatisation des tests de non-régression garantit la stabilité des fonctionnalités existantes en détectant rapidement les éventuelles régressions provoquées par de nouvelles modifications.
+        <br>◽ <a href="#" onclick="afficherPopupImg('images/x-page.png')">X_page</a>: Regroupe les déclarations nécessaires à l'exécution des tests, notamment les composants et éléments ciblés.
+        <br>◽ <a href="#" onclick="afficherPopupImg('images/x-test.png')">X_test</a>: Contient les étapes et instructions détaillées des scénarios de test à exécuter.
+        <br>◽ Les tests peuvent également être reférencier sur Azure DevOps, ce qui leurs permettent d'utiliser des <a href="#" onclick="afficherPopupImg('images/cas-de-test.png')">Paramètres dynamiques</a>.
+        <br>◽ <a href="#" onclick="afficherPopupImg('images/resultats-plan-de-test.png')">Analyse des résultats</a>: Les résultats des tests sont centralisés et référencés dans Azure DevOps, où ils peuvent être exécutés, suivis et analysés. 
+      </p>
     </div>
     <div class="section" id="section19">
-        <h1>SQLTheque</h1>
-        <h2 id="1-1">Contexte du projet</h2>
-        <p id="1-1-1">
-            <!--❔ <strong>Origine du besoin</strong> : Les métiers sollicitent régulièrement la MOA pour des extractions de
-            données spécifiques.-->
-            ❌ <strong>Problématique</strong>: La MOA dépend de la MOE pour exécuter et concevoir des requêtes SQL afin d'obtenir des informations essentielles pour mener à bien ses missions.
-            <br>✔ <a href="#" onclick="afficherPopupImg('images/diagramme-cas-utilisation-sqltheque.png')">Une solution</a>: Le SQLTheque permettra de rompre cette dépendance en offrant une bibliothèque de scripts exécutables sur plusieurs environnements, avec des paramètres modulables.
-        </p>
-        <h2 id="1-2">Gestion de projet</h2>
-        <p id="1-2-1">
-            ◽ Le SQLTheque sera une application réservée à MH TECH, et, par conséquent, n'aura pas les mêmes privilèges que le DataWiper. La gestion de projet, dans ce contexte, ne sera donc pas nécessaire.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/maquette-sqltheque.png')">Une maquette</a> a été élaborée pour organiser le contenu de manière structurée.
-            <br>❌ La mise en place d'une base de données MS SQL Server sera impossible en raison de la nature spécifique du projet.
-            <br>✔ Pour pallier cette contrainte, <a href="#" onclick="afficherPopupImg('images/sqlite-sqltheque.png')">SQLite</a> a été sélectionnée, ce qui simplifie également le processus de déploiement.
-        </p>
-        <!--
-        <h2 id="1-3">Analyse du besoin</h2>
-        <p id="1-3-1">
-        </p>
-        -->
+      <h1>SQLTheque</h1>
+      <h2 id="1-1">Contexte du projet</h2>
+      <p id="1-1-1">
+        <!--❔ <strong>Origine du besoin</strong> : Les métiers sollicitent régulièrement la MOA pour des extractions de
+données spécifiques.-->
+        ❌ <strong>Problématique</strong>: La MOA dépend de la MOE pour exécuter et concevoir des requêtes SQL afin d'obtenir des informations essentielles pour mener à bien ses missions.
+        <br>✔ <a href="#" onclick="afficherPopupImg('images/diagramme-cas-utilisation-sqltheque.png')">Une solution</a>: Le SQLTheque permettra de rompre cette dépendance en offrant une bibliothèque de scripts exécutables sur plusieurs environnements, avec des paramètres modulables.
+      </p>
+      <h2 id="1-2">Gestion de projet</h2>
+      <p id="1-2-1">
+        ◽ Le SQLTheque sera une application réservée à MH TECH, et, par conséquent, n'aura pas les mêmes privilèges que le DataWiper. La gestion de projet, dans ce contexte, ne sera donc pas nécessaire.
+        <br>◽ <a href="#" onclick="afficherPopupImg('images/maquette-sqltheque.png')">Une maquette</a> a été élaborée pour organiser le contenu de manière structurée.
+        <br>❌ La mise en place d'une base de données MS SQL Server sera impossible en raison de la nature spécifique du projet.
+        <br>✔ Pour pallier cette contrainte, <a href="#" onclick="afficherPopupImg('images/sqlite-sqltheque.png')">SQLite</a> a été sélectionnée, ce qui simplifie également le processus de déploiement.
+      </p>
+      <!--
+<h2 id="1-3">Analyse du besoin</h2>
+<p id="1-3-1">
+</p>
+-->
     </div>
-    <div class="section" id="section21">
-        <h1>DataWiper</h1>
-        <h2 id="2-1">Contexte du projet</h2>
-        <p id="2-1-1">
-            ❔ Origine du besoin : Depuis l'entrée en vigueur du RGPD, MH, étant un acteur clé du secteur de la santé, évolue dans un environnement fortement réglementé.
-            <br>❌ Problématique : La gestion des données de purge et leur ordonnancement se faisait manuellement, ce qui était peu efficace et présentait des risques de non-conformité ou de perte de données sensibles. Aucun système automatisé n'était en place pour gérer ces processus.
-        </p>
-        <h2 id="2-3">Gestion de projet</h2>
-        <p id="2-3-1">
-            ◽ <a href="#" onclick="afficherPopupImg('images/moa-moe.png')">Rôles</a>: Le chef d'équipe a assumé le rôle de MOA, tandis que j'ai rejoint Rémi en tant que contributeur au projet.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/agilite.png')">Méthodologie</a>:  Organisation en mode agile, avec des points réguliers pour suivre l'avancement des fonctionnalités et ajuster les priorités si nécessaire.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Architecture</a>: Mise en place d'une architecture client-serveur de type trois tiers, garantissant modularité et évolutivité.
-            <br>◽ <a href="#" onclick="afficherPopupImg('images/technologies.png')">Technologies</a> : Utilisation de technologies maîtrisées par l'équipe, notamment ASP.Net, SQL Server et JavaScript, pour assurer une mise en œuvre efficace et rapide.
-        </p>
-        <h2 id="2-4">Analyse du besoin</h2>
-        <p id="2-4-1">
-            ◽ <strong>Solution de purge automatisée</strong>: Développer une application permettant de gérer les processus de purge des données de manière automatisée, tout en respectant les critères de confidentialité et de sécurité.
-            <br>◽ <strong>Interface utilisateur claire et efficace</strong>: Une application robuste permettant à l'utilisateur de configurer, exécuter et suivre les processus de purge des données, tout en étant conforme aux exigences de sécurité et de traçabilité.
-        </p>
-        <h2 id="2-5">Comment s'y prend-il?</h2>
-        <p id="2-5-1">
-		Le DataWiper est conçu pour être <strong>générique</strong>, c'est-à-dire qu'il peut purger les données de n'importe quelle base de données appartenant à MH, quelle que soit l'application concernée :
-		<!-- POINT A AMÉLIORER!!!!! -->
-		<br>◽ <strong>Parcours de la hiérarchie des tables</strong>: Identifie et respecte les relations de dépendance entre les tables.
-		<br>◽ <strong>Filtrage des données à supprimer</strong>: Applique des critères spécifiques pour cibler uniquement les données pertinentes. (Filtre)
-		<br>◽ <strong>Flexibilité et adaptabilité</strong>: S'adapte aux différentes configurations des bases de données MH.
-        </p>
+    <div class="section" id="section24">
+      <h1>DataWiper</h1>
+      <h2 id="2-1">Contexte du projet</h2>
+      <p id="2-1-1">
+        ❔ Origine du besoin : Depuis l'entrée en vigueur du RGPD, MH, étant un acteur clé du secteur de la santé, évolue dans un environnement fortement réglementé.
+        <br>❌ Problématique : La gestion des données de purge et leur ordonnancement se faisait manuellement, ce qui était peu efficace et présentait des risques de non-conformité ou de perte de données sensibles. Aucun système automatisé n'était en place pour gérer ces processus.
+      </p>
+      <h2 id="2-3">Gestion de projet</h2>
+      <p id="2-3-1">
+        ◽ <a href="#" onclick="afficherPopupImg('images/moa-moe.png')">Rôles</a>: Le chef d'équipe a assumé le rôle de MOA, tandis que j'ai rejoint Rémi en tant que contributeur au projet.
+        <br>◽ <a href="#" onclick="afficherPopupImg('images/agilite.png')">Méthodologie</a>:  Organisation en mode agile, avec des points réguliers pour suivre l'avancement des fonctionnalités et ajuster les priorités si nécessaire.
+        <br>◽ <a href="#" onclick="afficherPopupImg('images/architecture-trois-tiers.png')">Architecture</a>: Mise en place d'une architecture client-serveur de type trois tiers, garantissant modularité et évolutivité.
+        <br>◽ <a href="#" onclick="afficherPopupImg('images/technologies.png')">Technologies</a> : Utilisation de technologies maîtrisées par l'équipe, notamment ASP.Net, SQL Server et JavaScript, pour assurer une mise en œuvre efficace et rapide.
+      </p>
+      <h2 id="2-4">Analyse du besoin</h2>
+      <p id="2-4-1">
+        ◽ <strong>Solution de purge automatisée</strong>: Développer une application permettant de gérer les processus de purge des données de manière automatisée, tout en respectant les critères de confidentialité et de sécurité.
+        <br>◽ <strong>Interface utilisateur claire et efficace</strong>: Une application robuste permettant à l'utilisateur de configurer, exécuter et suivre les processus de purge des données, tout en étant conforme aux exigences de sécurité et de traçabilité.
+      </p>
+      <h2 id="2-5">Comment s'y prend-il?</h2>
+      <p id="2-5-1">
+        Le DataWiper est conçu pour être <strong>générique</strong>, c'est-à-dire qu'il peut purger les données de n'importe quelle base de données appartenant à MH, quelle que soit l'application concernée :
+        <!-- POINT A AMÉLIORER!!!!! -->
+        <br>◽ <strong>Parcours de la hiérarchie des tables</strong>: Identifie et respecte les relations de dépendance entre les tables.
+        <br>◽ <strong>Filtrage des données à supprimer</strong>: Applique des critères spécifiques pour cibler uniquement les données pertinentes. (Filtre)
+        <br>◽ <strong>Flexibilité et adaptabilité</strong>: S'adapte aux différentes configurations des bases de données MH.
+      </p>
     </div>
     <!-- Conteneur de la popup pour afficher l'image en grand -->
     <div id="popup-img" onclick="fermerPopup()" class="popup">
-        <img id="popup-content" src="" alt="Image en grand">
+      <img id="popup-content" src="" alt="Image en grand">
+    </div>
+    <!-- Conteneur de la popup pour afficher le formulaire -->
+    <div id="popup-form" onclick="fermerPopupForm()" class="popup">
+      <div id="form-content" onclick="event.stopPropagation()"> <!-- StopPropagation pour éviter de fermer en cliquant sur le formulaire -->
+        <div class="checkbox-wrapper-11">
+          <input id="c1" type="checkbox" name="r" value="2">
+          <label for="c1">Maquetter une application</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c2" type="checkbox" name="r" value="2">
+          <label for="c2">Développer une interface utilisateur de type desktop</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c3" type="checkbox" name="r" value="2">
+          <label for="c3">Développer des composants d'accès aux données </label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c4" type="checkbox" name="r" value="2">
+          <label for="c4">Développer la partie front-end d'une interface utilisateur web</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c5" type="checkbox" name="r" value="2">
+          <label for="c5">Développer la partie back-end d'une interface utilisateur web</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c6" type="checkbox" name="r" value="2">
+          <label for="c6">Concevoir une base de données </label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c7" type="checkbox" name="r" value="2">
+          <label for="c7">Mettre en place une base de données</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c8" type="checkbox" name="r" value="2">
+          <label for="c8">Développer des composants dans le langage d'une base de données</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c9" type="checkbox" name="r" value="2">
+          <label for="c9">Collaborer à la gestion d'un projet informatique et à l'organisation de l'environnement de développement</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c10" type="checkbox" name="r" value="2">
+          <label for="c10">Concevoir une application</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c11" type="checkbox" name="r" value="2">
+          <label for="c11">Développer des composants métier</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c12" type="checkbox" name="r" value="2">
+          <label for="c12">Construire une application organisée en couches</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c13" type="checkbox" name="r" value="2">
+          <label for="c13">Développer une application mobile</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c14" type="checkbox" name="r" value="2">
+          <label for="c14">Préparer et exécuter les plans de tests d'une application</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c15" type="checkbox" name="r" value="2">
+          <label for="c15">Préparer et exécuter le déploiement d'une application</label>
+        </div>
+        <form id="example-form">
+          <button type="button" class="btn fermer" onclick="fermerPopupForm()">Fermer</button>
+        </form>
+      </div>
     </div>
     <footer>
-        <div class="footer-left">
-            <a href="#" id="previous"></a>
-        </div>
-        <div class="footer-right">
-            <a href="realisations.html" id="next"></a>
-        </div>
+      <div class="footer-left">
+        <a href="#" id="previous"></a>
+      </div>
+      <div class="footer-right">
+        <a href="realisations.html" id="next"></a>
+      </div>
     </footer>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>

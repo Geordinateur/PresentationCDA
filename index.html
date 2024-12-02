@@ -12,7 +12,7 @@
   <body>
     <nav>
       <ul>
-        <a href="index.html"><li class="enabled">Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li>Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a>
+        <a href="index.html"><li class="enabled">Introduction</li></a><a href="projets.html"><li>Les projets</li></a><a href="realisations.html"><li>Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a><li class="spacer"></li><a href="#" id="open-form"><li class="nav-competences">🎯</li></a>
       </ul>
     </nav>
     <div class="section" id="section-intro">
@@ -45,6 +45,75 @@
     <!-- Conteneur de la popup pour afficher l'image en grand -->
     <div id="popup-img" onclick="fermerPopup()" class="popup">
       <img id="popup-content" src="" alt="Image en grand">
+    </div>
+    <!-- Conteneur de la popup pour afficher le formulaire -->
+    <div id="popup-form" onclick="fermerPopupForm()" class="popup">
+      <div id="form-content" onclick="event.stopPropagation()"> <!-- StopPropagation pour éviter de fermer en cliquant sur le formulaire -->
+        <!--<div class="card">-->
+        <div class="checkbox-wrapper-11">
+          <input id="c1" type="checkbox" name="r" value="2">
+          <label for="c1">Maquetter une application</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c2" type="checkbox" name="r" value="2">
+          <label for="c2">Développer une interface utilisateur de type desktop</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c3" type="checkbox" name="r" value="2">
+          <label for="c3">Développer des composants d'accès aux données </label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c4" type="checkbox" name="r" value="2">
+          <label for="c4">Développer la partie front-end d'une interface utilisateur web</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c5" type="checkbox" name="r" value="2">
+          <label for="c5">Développer la partie back-end d'une interface utilisateur web</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c6" type="checkbox" name="r" value="2">
+          <label for="c6">Concevoir une base de données </label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c7" type="checkbox" name="r" value="2">
+          <label for="c7">Mettre en place une base de données</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c8" type="checkbox" name="r" value="2">
+          <label for="c8">Développer des composants dans le langage d'une base de données</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c9" type="checkbox" name="r" value="2">
+          <label for="c9">Collaborer à la gestion d'un projet informatique et à l'organisation de l'environnement de développement</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c10" type="checkbox" name="r" value="2">
+          <label for="c10">Concevoir une application</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c11" type="checkbox" name="r" value="2">
+          <label for="c11">Développer des composants métier</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c12" type="checkbox" name="r" value="2">
+          <label for="c12">Construire une application organisée en couches</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c13" type="checkbox" name="r" value="2">
+          <label for="c13">Développer une application mobile</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c14" type="checkbox" name="r" value="2">
+          <label for="c14">Préparer et exécuter les plans de tests d'une application</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c15" type="checkbox" name="r" value="2">
+          <label for="c15">Préparer et exécuter le déploiement d'une application</label>
+        </div>
+        <form id="example-form">
+          <button type="button" class="btn fermer" onclick="fermerPopupForm()">Fermer</button>
+        </form>
+      </div>
     </div>
     <footer>
       <div class="footer-left">

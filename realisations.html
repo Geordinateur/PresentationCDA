@@ -13,25 +13,25 @@
   <body>
     <nav>
       <ul>
-        <a href="index.html"><li>Introduction</li></a><a href="competences.html"><li>Les compétences</li></a><a href="projets.html"><li>Les projets</li></a><a href="realisations.html"><li class="enabled">Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a>
+        <a href="index.html"><li>Introduction</li></a><a href="projets.html"><li>Les projets</li></a><a href="realisations.html"><li class="enabled">Les réalisations</li></a><a href="conclusion.html"><li>Conclusion</li></a><li class="spacer"></li><a href="#" id="open-form"><li class="nav-competences">🎯</li></a>
       </ul>
     </nav>
-    <div class="section" id="section1">
+    <div class="section" id="section20">
       <h1>Les réalisations</h1>
-    <p>
-       Les principales réalisations incluent :
+      <p>
+        Les principales réalisations incluent :
         <br>◽ Les couches d'architecture: Entités métiers, DTO, DAO, BLL, une API REST, et une interface client en MVC.
         <br>◽ La sécurité : Mise en œuvre de l'authentification via Negotiate et d'autorisations basées sur les groupes Active Directory.
         <br>◽ La base de données : Conception et gestion d'une base relationnelle à l'aide d'un projet SQL dans Visual Studio.
         <br>◽ Le déploiement : Mise en place d'un pipeline CI/CD avec Azure DevOps pour automatiser les tests, la construction, et le déploiement de l'application.
       </p>
       <!--Ce projet repose sur une architecture logicielle modulaire et organisée en plusieurs couches interdépendantes, couvrant l’ensemble du cycle de vie des données, de leur modélisation à leur présentation côté client. Cette structure garantit une séparation des responsabilités, une maintenance facilitée et une grande évolutivité. Les principales réalisations incluent :
-      <br>◽ Gestion des données : Conception des modèles métiers (Entité métier), des structures d’échange (DTO), et des accès en base (DAO), avec une base de données relationnelle conçue dans un projet SQL via Visual Studio.
-      <br>◽ Logique métier et API : Implémentation des règles métiers (Business Logic Layer) et développement d’une API RESTful pour connecter le backend au frontend.
-      <br>◽ Sécurité : Mise en place de l’authentification via Negotiate et gestion des autorisations en fonction des groupes Active Directory (AD) de l’utilisateur.
-      <br>◽ Interface utilisateur : Intégration des données dans une architecture MVC pour une expérience utilisateur fluide et dynamique.
-      <br>◽ Déploiement : Automatisation du pipeline CI/CD et déploiement de l'application via Azure DevOps.
-      <div class="flex-row">
+<br>◽ Gestion des données : Conception des modèles métiers (Entité métier), des structures d’échange (DTO), et des accès en base (DAO), avec une base de données relationnelle conçue dans un projet SQL via Visual Studio.
+<br>◽ Logique métier et API : Implémentation des règles métiers (Business Logic Layer) et développement d’une API RESTful pour connecter le backend au frontend.
+<br>◽ Sécurité : Mise en place de l’authentification via Negotiate et gestion des autorisations en fonction des groupes Active Directory (AD) de l’utilisateur.
+<br>◽ Interface utilisateur : Intégration des données dans une architecture MVC pour une expérience utilisateur fluide et dynamique.
+<br>◽ Déploiement : Automatisation du pipeline CI/CD et déploiement de l'application via Azure DevOps.
+<div class="flex-row">
 <a href="#section2"><div class="card btn">
 <h1>Une Entité</h1>
 </div></a>
@@ -46,37 +46,37 @@
 </div></a>
 </div>-->
     </div>
-    <div class="section" id="section2">
+    <div class="section" id="section21">
       <h1>Les couches d'architecture de l'application</h1>
       <p>
-        Pour illustré l'ensemble de ces couches, je vais utiliser l'<a href="#" onclick="afficherPopupImg('images/diagramme-sequence-datawiper.png')">entité</a> Application de l'application.</p>
+        Pour illustré l'ensemble de ces <a href="#" onclick="afficherPopupImg('images/les-couches.png')">couches</a>, je vais utiliser l'<a href="#" onclick="afficherPopupImg('images/diagramme-sequence-datawiper.png')">entité</a> Application de l'application.</p>
       <h2 id="1-1">L'entité métier (Domaine métier)</h2>
       <p id="1-1-1">
-        ◽ Cette couche contient les concepts fondamentaux du domaine métier et leurs règles. Ces entités représentent des objets réels ou abstraits liés à notre domaine (par exemple, un filtre). Elles encapsulent les propriétés (attributs) et comportements (méthodes métier). <a href="#" onclick="afficherPopupImg('images/entite-application-datawiper.png')">Voir</a>.
+        Cette <a href="#" onclick="afficherPopupImg('images/entite-application-datawiper.png')">couche</a> contient les concepts fondamentaux du domaine métier et leurs règles. Ces entités représentent des objets réels ou abstraits liés à notre domaine (par exemple, un filtre). Elles encapsulent les propriétés (attributs) et comportements (méthodes métier).
       </p>
       <h2 id="1-2">Le modèle de données (Data Transfert Object)</h2>
       <p id="1-2-1">
-        ◽ Cette couche est directement liée à la structure de la base de données. Les objets dans cette couche reflètent les tables, les relations, et les colonnes de notre système de stockage. <a href="#" onclick="afficherPopupImg('images/model-application-datawiper.png')">Voir</a>.
+        Cette <a href="#" onclick="afficherPopupImg('images/model-application-datawiper.png')">couche</a> est directement liée à la structure de la base de données. Les objets dans cette couche reflètent les tables, les relations, et les colonnes de notre système de stockage.
       </p>
       <h2 id="1-3">Adaptateur de persistance (Data Access Object)</h2>
       <p id="1-3-1">
-        ◽ Cette couche agit comme un intermédiaire entre notre service métier et la base de données. Elle abstrait les détails de l'accès aux données (CRUD) via des repositories ou des connecteurs. <a href="#" onclick="afficherPopupImg('images/adaptateur-persistance-application-datawiper.png')">Voir</a>.
+        Cette  <a href="#" onclick="afficherPopupImg('images/adaptateur-persistance-application-datawiper.png')">couche</a> agit comme un intermédiaire entre notre service métier et la base de données. Elle abstrait les détails de l'accès aux données (CRUD) via des repositories ou des connecteurs.
       </p>
       <h2 id="1-4">Service métier (Business Logic Layer)</h2>
       <p id="1-4-1">
-        ◽ C'est le chef d'orchestre de notre logique métier. Cette couche contient des cas d'utilisation spécifiques qui combinent plusieurs entités et données. Elle utilise les entités métier et les adaptateurs pour effectuer des opérations complexes en proposant une série de méthodes qui seront utilisables pour le client. <a href="#" onclick="afficherPopupImg('images/domaine-application-datawiper.png')">Voir</a>.
+        C'est le  <a href="#" onclick="afficherPopupImg('images/domaine-application-datawiper.png')">chef d'orchestre</a> de notre logique métier. Cette couche contient des cas d'utilisation spécifiques qui combinent plusieurs entités et données. Elle utilise les entités métier et les adaptateurs pour effectuer des opérations complexes en proposant une série de méthodes qui seront utilisables pour le client.
       </p>
       <h2 id="1-5">Façade web du service (API web)</h2>
       <p id="1-5-1">
-        ◽ La couche qui sert de point d'entrée pour les clients externes. Elle expose les fonctionnalités de notre application sous forme d'API web (REST), reçoit les requêtes HTTP et communique avec la couche métier (BLL). <a href="#" onclick="afficherPopupImg('images/controller-application-datawiper.png')">Voir</a>.
+        La <a href="#" onclick="afficherPopupImg('images/controller-application-datawiper.png')">couche</a> qui sert de point d'entrée pour les clients externes. Elle expose les fonctionnalités de notre application sous forme d'API web (REST), reçoit les requêtes HTTP et communique avec la couche métier (BLL).
       </p>
       <h2 id="1-6">Contrôleur et Vue (Coté client)</h2>
       <p id="1-6-1">
-        ◽ La partie interface utilisateur de notre application. Elle inclut la logique de contrôle et les éléments visuels permettant aux utilisateurs d'interagir avec le système. <a href="#" onclick="afficherPopupImg('images/view-application-datawiper.png')">Voir</a>.
+        <a href="#" onclick="afficherPopupImg('images/view-application-datawiper.png')">La partie interface</a> utilisateur de notre application. Elle inclut la logique de contrôle et les éléments visuels permettant aux utilisateurs d'interagir avec le système.
       </p>
 
     </div>
-    <div class="section" id="section3">
+    <div class="section" id="section20">
       <h1>Sécurité</h1>
       <p>
         La sécurité de DataWiper repose sur deux axes: <a href="#" onclick="afficherPopupImg('images/authentification-datawiper.png')">authentification</a> et <a href="#" onclick="afficherPopupImg('images/autorisation-datawiper.png')">autorisation</a>, essentiels pour contrôler l'identité et les droits d'accès.
@@ -93,19 +93,19 @@
       </p>
     </div>
 
-    <div class="section" id="section4">
+    <div class="section" id="section21">
       <h1>SQL</h1>
-    <p>
-      La base de données SQLServer pour DataWiper est conçue à partir d'un Modèle Conceptuel de Données (<a href="#" onclick="afficherPopupImg('images/uml-mdc-datawiper.png')">MCD</a>), puis transformée en un Projet SQL Server dans Visual Studio.
-      <br>◽ Création d'un nouveau projet de type « Projet de base de données SQL Server » dans <a href="#" onclick="afficherPopupImg('images/projet-sql.png')">Visual Studio</a>.
-      <br>◽ Les tables peuvent ensuite être créées facilement à l'aide d'un "Designer" visuel ou par l'écriture de scripts.
+      <p>
+        La base de données SQLServer pour DataWiper est conçue à partir d'un Modèle Conceptuel de Données (<a href="#" onclick="afficherPopupImg('images/uml-mdc-datawiper.png')">MCD</a>), puis transformée en un Projet SQL Server dans Visual Studio.
+        <br>◽ Création d'un nouveau projet de type « Projet de base de données SQL Server » dans <a href="#" onclick="afficherPopupImg('images/projet-sql.png')">Visual Studio</a>.
+        <br>◽ Les tables peuvent ensuite être créées facilement à l'aide d'un "Designer" visuel ou par l'écriture de scripts.
       </p>
       <!--<h2 id="2-1">Sous visual studio</h2>
 <p id="2-1-1">
 </p>-->
     </div>
 
-    <div class="section" id="section5">
+    <div class="section" id="section20">
       <h1>Déploiement</h1>
       <p>
         Le projet DataWiper est versionné sur Azure DevOps, qui gère la CI/CD (intégration continue/déploiement continu).
@@ -121,9 +121,9 @@
       <h2 id="5-2">Pipeline automatisé</h2>
       <p id="5-2-1">
         Lorsqu'un pipeline est exécuté (via Run Pipeline), Azure DevOps :
-      <br>◽ Compile et archive l'application.
-      <br>◽ Déploie automatiquement les fichiers nécessaires sur l'environnement cible.
-      <br>◽ Met à jour la base de données (scripts SQL déployés via le pipeline SQL).
+        <br>◽ Compile et archive l'application.
+        <br>◽ Déploie automatiquement les fichiers nécessaires sur l'environnement cible.
+        <br>◽ Met à jour la base de données (scripts SQL déployés via le pipeline SQL).
       </p>
     </div>
 
@@ -131,7 +131,75 @@
     <div id="popup-img" onclick="fermerPopup()" class="popup">
       <img id="popup-content" src="" alt="Image en grand">
     </div>
-
+    <!-- Conteneur de la popup pour afficher le formulaire -->
+    <div id="popup-form" onclick="fermerPopupForm()" class="popup">
+      <div id="form-content" onclick="event.stopPropagation()"> <!-- StopPropagation pour éviter de fermer en cliquant sur le formulaire -->
+        <!--<div class="card">-->
+        <div class="checkbox-wrapper-11">
+          <input id="c1" type="checkbox" name="r" value="2">
+          <label for="c1">Maquetter une application</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c2" type="checkbox" name="r" value="2">
+          <label for="c2">Développer une interface utilisateur de type desktop</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c3" type="checkbox" name="r" value="2">
+          <label for="c3">Développer des composants d'accès aux données </label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c4" type="checkbox" name="r" value="2">
+          <label for="c4">Développer la partie front-end d'une interface utilisateur web</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c5" type="checkbox" name="r" value="2">
+          <label for="c5">Développer la partie back-end d'une interface utilisateur web</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c6" type="checkbox" name="r" value="2">
+          <label for="c6">Concevoir une base de données </label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c7" type="checkbox" name="r" value="2">
+          <label for="c7">Mettre en place une base de données</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c8" type="checkbox" name="r" value="2">
+          <label for="c8">Développer des composants dans le langage d'une base de données</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c9" type="checkbox" name="r" value="2">
+          <label for="c9">Collaborer à la gestion d'un projet informatique et à l'organisation de l'environnement de développement</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c10" type="checkbox" name="r" value="2">
+          <label for="c10">Concevoir une application</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c11" type="checkbox" name="r" value="2">
+          <label for="c11">Développer des composants métier</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c12" type="checkbox" name="r" value="2">
+          <label for="c12">Construire une application organisée en couches</label>
+        </div>
+        <div class="checkbox-wrapper-11 disabled">
+          <input id="c13" type="checkbox" name="r" value="2">
+          <label for="c13">Développer une application mobile</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c14" type="checkbox" name="r" value="2">
+          <label for="c14">Préparer et exécuter les plans de tests d'une application</label>
+        </div>
+        <div class="checkbox-wrapper-11">
+          <input id="c15" type="checkbox" name="r" value="2">
+          <label for="c15">Préparer et exécuter le déploiement d'une application</label>
+        </div>
+        <form id="example-form">
+          <button type="button" class="btn fermer" onclick="fermerPopupForm()">Fermer</button>
+        </form>
+      </div>
+    </div>
     <footer>
       <div class="footer-left">
         <a href="#" id="previous"></a>

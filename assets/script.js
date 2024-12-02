@@ -114,6 +114,21 @@ function fermerPopup() {
     popup.style.display = 'none';
 }
 
+// Fonction pour afficher la popup avec le formulaire
+function afficherPopupForm() {
+    const popup = document.getElementById('popup-form');
+    popup.style.display = 'flex'; // Affiche la popup (flex pour centrer le contenu)
+}
+
+document.getElementById("open-form").addEventListener("click", (event) => {
+    event.preventDefault(); // Empêche le comportement par défaut
+    afficherPopupForm(); // Appelle ta fonction existante avec l'index
+});
+// Fonction pour fermer la popup
+function fermerPopupForm() {
+    const popup = document.getElementById('popup-form');
+    popup.style.display = 'none';
+}
 
 /*
 var wordflick = function (words, speed = 70, skip_delay = 15) {
@@ -221,15 +236,16 @@ $(document).ready(function() {
 	}
 });
 
-/*
 // Ajout du clic sur l'élément <h1> pour défiler vers une section spécifique
 const sqlThequeHeader = document.getElementById("a-sqltheque");
-sqlThequeHeader.addEventListener("click", (event) => {
+const dataWiperHeader = document.getElementById("a-datawiper");
+if(dataWiperHeader){
+dataWiperHeader.addEventListener("click", (event) => {
     event.preventDefault(); // Empêche le comportement par défaut
-    const targetIndex = 1; // Index de la section vers laquelle scroller (section 2 ici)
+    const targetIndex = 3; // Index de la section vers laquelle scroller (section 2 ici)
     scrollToSection(targetIndex); // Appelle ta fonction existante avec l'index
 });
-*/
+}
 
 $(document).ready(function () {
     // Lorsque l'utilisateur clique sur un <h2>
