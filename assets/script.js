@@ -89,8 +89,9 @@ window.addEventListener('keydown', (event) => {
     } else if (event.key === 'ArrowRight') {
         // Touche droite - clic sur le lien suivant
         nextLink.click();
-	} else if (event.key === 'Escape') {
-		fermerPopup();
+    } else if (event.key === 'Escape') {
+        fermerPopup();
+        fermerPopupForm();
     }
 });
 
@@ -111,7 +112,15 @@ function afficherPopupImg(imageSrc) {
 // Fonction pour fermer la popup
 function fermerPopup() {
     const popup = document.getElementById('popup-img');
-    popup.style.display = 'none';
+    //popup.style.display = 'none';
+    popup.classList.add('hide'); // Ajouter la classe de fermeture
+    // Attendre la fin de l'animation pour masquer la popup
+    popup.addEventListener('animationend', () => {
+        if (popup.classList.contains('hide')) {
+            popup.style.display = 'none';
+            popup.classList.remove('hide'); // Retirer la classe de fermeture si présente
+        }
+    }, { once: true });
 }
 
 // Fonction pour afficher la popup avec le formulaire
@@ -127,7 +136,14 @@ document.getElementById("open-form").addEventListener("click", (event) => {
 // Fonction pour fermer la popup
 function fermerPopupForm() {
     const popup = document.getElementById('popup-form');
-    popup.style.display = 'none';
+    popup.classList.add('hide'); // Ajouter la classe de fermeture
+    // Attendre la fin de l'animation pour masquer la popup
+    popup.addEventListener('animationend', () => {
+        if (popup.classList.contains('hide')) {
+            popup.style.display = 'none';
+            popup.classList.remove('hide'); // Retirer la classe de fermeture si présente
+        }
+    }, { once: true });
 }
 
 /*
@@ -138,7 +154,7 @@ var wordflick = function (words, speed = 70, skip_delay = 15) {
         len = words.length,
         forwards = true,
         skip_count = 0;
-    
+
     setInterval(function () {
       if (forwards) {
         if (offset >= words[i].length) {
@@ -158,9 +174,9 @@ var wordflick = function (words, speed = 70, skip_delay = 15) {
           }
         }
       }
-  
+
       part = words[i].substr(0, offset);
-      
+
       if (skip_count == 0) {
         if (forwards) {
           offset++;
@@ -168,12 +184,12 @@ var wordflick = function (words, speed = 70, skip_delay = 15) {
           offset--;
         }
       }
-      
+
       $('.word').text(part); // Mettre à jour l'élément HTML avec la classe .word
-  
+
     }, speed);
   };
-  
+
   $(document).ready(function () {
     var myWords = ['Hi i like HTML', 'I also like css', 'Lorem ipsum dolor sit amet', 'consectetur adipiscing elit', 'sed do eiusmod tempor incididunt'];
     wordflick(myWords, 70, 15); // Appel de la fonction avec un tableau de phrases et des paramètres de vitesse
@@ -227,24 +243,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $(document).ready(function() {
-	for(let i = 0; i <= 12; i++) {
-		$('#' + i).click(function(e) {
-			e.preventDefault();
-			$('#' + i + '-1').toggle("slow");
-			//$($(this).attr('href')).show();
-		});
-	}
+    for(let i = 0; i <= 12; i++) {
+        $('#' + i).click(function(e) {
+            e.preventDefault();
+            $('#' + i + '-1').toggle("slow");
+            //$($(this).attr('href')).show();
+        });
+    }
 });
 
 // Ajout du clic sur l'élément <h1> pour défiler vers une section spécifique
 const sqlThequeHeader = document.getElementById("a-sqltheque");
 const dataWiperHeader = document.getElementById("a-datawiper");
 if(dataWiperHeader){
-dataWiperHeader.addEventListener("click", (event) => {
-    event.preventDefault(); // Empêche le comportement par défaut
-    const targetIndex = 3; // Index de la section vers laquelle scroller (section 2 ici)
-    scrollToSection(targetIndex); // Appelle ta fonction existante avec l'index
-});
+    dataWiperHeader.addEventListener("click", (event) => {
+        event.preventDefault(); // Empêche le comportement par défaut
+        const targetIndex = 3; // Index de la section vers laquelle scroller (section 2 ici)
+        scrollToSection(targetIndex); // Appelle ta fonction existante avec l'index
+    });
 }
 
 $(document).ready(function () {
