@@ -367,9 +367,9 @@ body {
   background-color: #fff;
 }
 #popup-img img {
-  /*max-width: 100%;*/
+  /*max-width: 101%;*/
   max-height: 85dvh;
-  max-width: 150dvh;
+  max-width: 130dvh;
   /*max-height: 85dvh;*/
 }
 
